@@ -79,13 +79,13 @@ const Card: FC<iCardProps> = ({
           </div>
 
           {/* Benefits Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-2 max-w-2xl">
             {benefits_en.map((_, idx) => (
-              <div key={idx} className="flex items-center gap-3">
-                <div className="w-5 h-5 rounded-full flex items-center justify-center border border-[#cda558]/50">
-                  <div className="w-2 h-2 rounded-full bg-[#cda558]" />
+              <div key={idx} className="flex items-center gap-2">
+                <div className="w-3 h-3 md:w-5 md:h-5 rounded-full flex items-center justify-center border border-[#cda558]/50 shrink-0">
+                  <div className="w-1 h-1 md:w-2 md:h-2 rounded-full bg-[#cda558]" />
                 </div>
-                <span className="text-white/80 text-sm md:text-base font-medium">
+                <span className="text-white/80 text-[10px] md:text-base font-medium line-clamp-2">
                   <Translate
                     en={benefits_en[idx]}
                     ru={benefits_ru[idx]}
@@ -98,7 +98,7 @@ const Card: FC<iCardProps> = ({
         </div>
 
         {/* Right: Image */}
-        <div className="flex-1 relative w-full h-[40vh] md:h-[60vh] flex items-center justify-center z-10">
+        <div className="flex-1 relative w-full h-[30vh] md:h-[60vh] flex items-center justify-end md:justify-center z-10 -mt-12 md:mt-0 translate-x-[10%] md:translate-x-0">
           <div className="relative w-full h-full">
             <Image
               className="w-full h-full object-contain drop-shadow-[0_40px_80px_rgba(0,0,0,0.8)]"
