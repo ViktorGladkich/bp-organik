@@ -43,7 +43,7 @@ const STEPS = [
       "Испытайте природную выносливость и элитные результаты. Ваш режим прост.",
     desc_tr:
       "Doğal dayanıklılığı ve elit performansı deneyimleyin. Rutininiz çok basit.",
-    image: "/how-it-works/step3_v2.jpg",
+    image: "/how-it-works/step3_v2.png",
   },
 ];
 
