@@ -3,9 +3,11 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Translate from "@/components/Translate";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function About() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const { language } = useLanguage();
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"],
@@ -48,7 +50,13 @@ export default function About() {
               <span className="text-[#cda558] text-sm font-semibold tracking-[0.3em] uppercase mb-4 block">
                 <Translate en="Our Legacy" ru="Наше наследие" tr="Mirasımız" />
               </span>
-              <h2 className="text-4xl md:text-7xl font-semibold text-white tracking-tighter leading-none mb-10 italic">
+              <h2
+                className={`font-semibold text-white tracking-tighter leading-none mb-10 italic ${
+                  language === "ru"
+                    ? "text-3xl md:text-6xl"
+                    : "text-4xl md:text-7xl"
+                }`}
+              >
                 <Translate
                   en="14 Years of Uncompromising Excellence."
                   ru="14 лет бескомпромиссного качества."

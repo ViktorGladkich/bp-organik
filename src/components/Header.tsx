@@ -105,17 +105,7 @@ export default function Header() {
             transition={{ duration: 1.1, ease: [0.76, 0, 0.24, 1] }}
             className="fixed inset-0 z-90 bg-[#050505] flex items-center justify-center pt-24"
           >
-            {/* Background animated elements */}
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1.2, opacity: 0.05 }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                repeatType: "reverse",
-              }}
-              className="absolute w-[80vw] h-[80vw] bg-[#cda558] rounded-full blur-[180px] pointer-events-none"
-            />
+            {/* Background animated elements removed */}
 
             <nav className="container mx-auto px-6 h-full flex flex-col justify-center relative z-10 overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-center">

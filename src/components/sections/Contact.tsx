@@ -3,12 +3,14 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useRef } from "react";
 import Translate from "@/components/Translate";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Contact() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [formState, setFormState] = useState<"idle" | "loading" | "success">(
     "idle",
   );
+  const { language } = useLanguage();
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -72,27 +74,37 @@ export default function Contact() {
           <div className="lg:col-span-4 space-y-12">
             <div className="relative group">
               <h3 className="text-white/20 text-[10px] font-bold uppercase tracking-[0.3em] mb-4">
-                HEADQUARTER
+                <Translate en="HEADQUARTER" ru="ШТАБ-КВАРТИРА" tr="MERKEZ" />
               </h3>
               <p className="text-white text-2xl font-medium tracking-tight leading-snug">
                 Antalya, Turkey <br />
-                Global Distribution Hub
+                <Translate
+                  en="Global Distribution Hub"
+                  ru="Глобальный дистрибьюторский хаб"
+                  tr="Küresel Dağıtım Merkezi"
+                />
               </p>
               <div className="w-8 h-px bg-[#cda558] mt-6 group-hover:w-full transition-all duration-700" />
             </div>
 
             <div className="space-y-10">
               <ContactLink
-                label="Email"
-                value="info@bporganik.com.tr"
-                href="mailto:info@bporganik.com.tr"
+                label={<Translate en="Email" ru="Почта" tr="E-posta" />}
+                value="bp.organika@gmail.com"
+                href="mailto:bp.organika@gmail.com"
               />
               <ContactLink
-                label="Phone"
+                label={<Translate en="Phone" ru="Телефон" tr="Telefon" />}
                 value="+90 536 591 48 20"
                 href="tel:+905365914820"
               />
-              <ContactLink label="Instagram" value="@bporganik" href="#" />
+              <ContactLink
+                label={
+                  <Translate en="Instagram" ru="Инстаграм" tr="Instagram" />
+                }
+                value="@bporganik"
+                href="#"
+              />
             </div>
           </div>
 
@@ -144,31 +156,61 @@ export default function Contact() {
                   <form onSubmit={handleSubmit} className="space-y-12">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                       <PremiumInput
-                        label="FULL NAME"
-                        placeholder="Alexander Great"
+                        label={
+                          <Translate
+                            en="FULL NAME"
+                            ru="ПОЛНОЕ ИМЯ"
+                            tr="AD SOYAD"
+                          />
+                        }
+                        placeholder={
+                          language === "ru"
+                            ? "Имя и фамилия"
+                            : language === "tr"
+                              ? "Adınız ve Soyadınız"
+                              : "Your full name"
+                        }
                         required
                       />
                       <PremiumInput
-                        label="CONNECT VIA"
-                        placeholder="email@example.com"
+                        label={
+                          <Translate
+                            en="CONNECT VIA"
+                            ru="СПОСОБ СВЯЗИ"
+                            tr="İLETİŞİM"
+                          />
+                        }
+                        placeholder={
+                          language === "ru"
+                            ? "Email или телефон"
+                            : language === "tr"
+                              ? "E-posta veya telefon"
+                              : "Email or phone"
+                        }
                         required
                       />
                     </div>
                     <div className="space-y-4">
                       <label className="text-white/30 text-[10px] font-black uppercase tracking-[0.4em] ml-2">
-                        MESSAGE
+                        <Translate en="MESSAGE" ru="СООБЩЕНИЕ" tr="MESAJ" />
                       </label>
                       <textarea
                         required
                         className="w-full bg-white/2 border border-white/5 rounded-3xl p-8 text-white text-lg font-medium outline-none focus:border-[#cda558]/50 focus:bg-white/5 transition-all min-h-[180px] resize-none"
-                        placeholder="How can we help your journey?"
+                        placeholder={
+                          language === "ru"
+                            ? "Как мы можем помочь вам?"
+                            : language === "tr"
+                              ? "Size nasıl yardımcı olabiliriz?"
+                              : "How can we help your journey?"
+                        }
                       />
                     </div>
                     <motion.button
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       disabled={formState === "loading"}
-                      className="w-full h-20 bg-[#cda558] hover:bg-white text-black font-black uppercase tracking-[0.3em] rounded-3xl transition-all duration-500 flex items-center justify-center gap-4 relative overflow-hidden group shadow-[0_20px_40px_rgba(205,165,88,0.1)] hover:shadow-[0_20px_60px_rgba(205,165,88,0.2)]"
+                      className="w-full md:w-auto px-12 h-14 bg-[#cda558] hover:bg-white text-black font-bold uppercase tracking-widest rounded-2xl transition-all duration-500 flex items-center justify-center gap-3 relative overflow-hidden group shadow-[0_10px_30px_rgba(205,165,88,0.1)] hover:shadow-[0_15px_40px_rgba(205,165,88,0.2)]"
                     >
                       {formState === "loading" ? (
                         <div className="w-6 h-6 border-4 border-black/20 border-t-black rounded-full animate-spin" />
@@ -211,7 +253,7 @@ function ContactLink({
   value,
   href,
 }: {
-  label: string;
+  label: React.ReactNode;
   value: string;
   href: string;
 }) {
@@ -236,7 +278,7 @@ function ContactLink({
 function PremiumInput({
   label,
   ...props
-}: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
+}: { label: React.ReactNode } & React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <div className="space-y-4 w-full group">
       <label className="text-white/30 text-[10px] font-black uppercase tracking-[0.4em] ml-2 group-focus-within:text-[#cda558] transition-colors">

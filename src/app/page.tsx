@@ -16,9 +16,9 @@ export default function Home() {
       <DynamicHero />
       <HowItWorks />
       <Products />
+      <About />
       <Advantages />
       <Certificates />
-      <About />
       <Halal />
       <Contact />
       <Footer />

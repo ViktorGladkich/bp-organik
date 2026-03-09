@@ -5,9 +5,11 @@ import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
 import Image from "next/image";
 import Translate from "@/components/Translate";
 import { TranslatedTextReveal } from "@/components/ui/TranslatedTextReveal";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function DynamicHero() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const { language } = useLanguage();
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -20,7 +22,7 @@ export default function DynamicHero() {
     [0, 0.1, 0.15],
     [1, 0.5, 0],
   );
-  const initialY = useTransform(scrollYProgress, [0, 0.15], ["0vh", "-100vh"]);
+  const initialY = useTransform(scrollYProgress, [0, 0.15], ["0%", "-100%"]);
 
   // Background Text: stays at the bottom, fades out very late
   const bgTextOpacity = useTransform(scrollYProgress, [0.9, 2], [0.09, 0]);
@@ -93,9 +95,9 @@ export default function DynamicHero() {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-[600vh] bg-[#050505] border-b border-white/5"
+      className="relative w-full h-[calc(var(--vh,1vh)*600)] bg-[#050505] border-b border-white/5"
     >
-      <div className="sticky top-0 w-full h-screen overflow-hidden bg-[#050505] flex justify-center items-center">
+      <div className="sticky top-0 w-full h-[calc(var(--vh,1vh)*100)] overflow-hidden bg-[#050505] flex justify-center items-center">
         {/* Large Background Text */}
         <motion.div
           style={{ opacity: bgTextOpacity }}
@@ -112,9 +114,15 @@ export default function DynamicHero() {
         {/* Initial Left Text */}
         <motion.div
           style={{ opacity: initialOpacity, y: initialY }}
-          className="absolute top-[20%] left-[5%] md:left-[5%] w-[90vw] md:w-[45vw] max-w-[700px] z-10 pointer-events-none"
+          className="absolute top-[18%] left-[5%] md:left-[5%] w-[90vw] md:w-[60vw] max-w-[800px] z-10 pointer-events-none"
         >
-          <h1 className="text-4xl md:text-6xl lg:text-[80px] text-white tracking-tight font-medium leading-[1.1]">
+          <h1
+            className={`text-white tracking-tight font-medium leading-[1.1] ${
+              language === "ru"
+                ? "text-4xl md:text-5xl lg:text-[70px]"
+                : "text-4xl md:text-6xl lg:text-[80px]"
+            }`}
+          >
             <Translate
               en="Your healthiest"
               ru="Максимальное"
@@ -182,7 +190,7 @@ export default function DynamicHero() {
         {/* Initial Right Text */}
         <motion.div
           style={{ opacity: initialOpacity, y: initialY }}
-          className="absolute top-[50%] md:top-[50%] right-[5%] md:right-[5%] w-[90vw] md:w-[30vw] max-w-[400px] z-10 pointer-events-none md:text-right hidden md:block"
+          className="absolute top-[40%] md:top-[50%] right-[5%] md:right-[5%] w-[90vw] md:w-[30vw] max-w-[400px] z-10 pointer-events-none md:text-right hidden md:block"
         >
           <p className="text-lg md:text-2xl text-white/90 font-medium leading-snug tracking-tight">
             <Translate
@@ -224,7 +232,7 @@ export default function DynamicHero() {
         {/* Blurred Center Text */}
         <motion.div
           style={{ opacity: blurOpacity, filter: blurFilter, scale: blurScale }}
-          className="absolute top-[40%] md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full px-4 z-10 flex flex-col items-center gap-2"
+          className="absolute top-[35%] md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full px-4 z-10 flex flex-col items-center gap-2"
         >
           <TranslatedTextReveal
             className="text-5xl md:text-[80px] lg:text-[100px] text-white tracking-tight font-medium leading-none drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]"
@@ -319,7 +327,7 @@ function ScrollCard({
   return (
     <motion.div
       style={{ y: anim.y, opacity: anim.opacity }}
-      className="absolute top-[18%] md:top-[30%] left-[5%] md:left-[10%] w-[90vw] md:w-[45vw] max-w-[600px]"
+      className="absolute top-[12%] md:top-[30%] left-[5%] md:left-[10%] w-[90vw] md:w-[45vw] max-w-[600px]"
     >
       <div
         className={`font-sans tracking-tighter font-medium text-[150px] md:text-[250px] text-white opacity-[0.03] absolute -top-16 md:-top-32 -left-4 md:-left-12 z-0 select-none leading-none pointer-events-none`}
@@ -328,7 +336,7 @@ function ScrollCard({
       </div>
       <div className="relative z-10 w-full">
         <h3
-          className={`font-sans font-medium text-4xl md:text-6xl text-white uppercase mb-6 tracking-tight leading-[1.1] drop-shadow-lg`}
+          className={`font-sans font-medium text-3xl md:text-6xl text-white uppercase mb-6 tracking-tight leading-[1.1] drop-shadow-lg`}
         >
           <Translate en={title_en} ru={title_ru} tr={title_tr} />
         </h3>

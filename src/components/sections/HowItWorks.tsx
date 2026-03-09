@@ -58,9 +58,9 @@ export default function HowItWorks() {
     <section
       ref={containerRef}
       id="how-it-works"
-      className="relative w-full bg-[#050505] min-h-[400vh] border-b border-white/5"
+      className="relative w-full bg-[#050505] min-h-[calc(var(--vh,1vh)*400)] border-b border-white/5"
     >
-      <div className="sticky top-0 h-screen w-full flex items-center overflow-hidden px-6 md:px-24">
+      <div className="sticky top-0 h-[calc(var(--vh,1vh)*100)] w-full flex items-center overflow-hidden px-6 md:px-24">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
           {/* Left Side: Reveal on Scroll Heading */}
           <div className="flex flex-col justify-center">
@@ -149,7 +149,7 @@ function StackedImage({
   const y = useTransform(
     progress,
     isMobile ? [start - 0.25, start] : [0, start, end - 0.05, end],
-    isMobile ? ["100vh", "0px"] : [`${index * 30}px`, "0px", "0px", "-120%"],
+    isMobile ? ["100%", "0px"] : [`${index * 30}px`, "0px", "0px", "-120%"],
   );
 
   // x: Move to 0 only on desktop

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import Translate from "./Translate";
 
 export default function Footer() {
@@ -14,9 +15,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-32">
           {/* Brand Info */}
           <div className="lg:col-span-2">
-            <h2 className="text-white text-4xl font-semibold mb-8 tracking-tighter italic">
-              BP ORGANIK<span className="text-[#cda558]">.</span>
-            </h2>
+            <div className="flex items-center gap-3 mb-8">
+              <Image
+                src="/logo.png"
+                alt="BP Logo"
+                width={50}
+                height={50}
+                className="object-contain"
+              />
+              <h2 className="text-white text-4xl font-semibold tracking-tighter italic">
+                ORGANIK<span className="text-[#cda558]">.</span>
+              </h2>
+            </div>
             <p className="text-white/50 text-xl font-medium max-w-sm leading-relaxed mb-10 italic">
               <Translate
                 en="Dedicated to the athletic pursuit of natural excellence."
@@ -71,10 +81,10 @@ export default function Footer() {
                   EMAIL
                 </p>
                 <a
-                  href="mailto:info@bporganik.com.tr"
+                  href="mailto:bp.organika@gmail.com"
                   className="text-white/80 hover:text-[#cda558] transition-colors font-semibold tracking-tight"
                 >
-                  info@bporganik.com.tr
+                  bp.organika@gmail.com
                 </a>
               </div>
               <div>
@@ -94,18 +104,28 @@ export default function Footer() {
 
         {/* Large Brand Background Text */}
         <div className="relative mb-20 pointer-events-none select-none overflow-hidden">
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 0.8, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            className="text-[13vw] font-black text-[#cda558] leading-none tracking-tighter text-center uppercase whitespace-nowrap"
+            className="flex items-center justify-center gap-[2vw]"
           >
-            BP ORGANIK
-          </motion.h1>
+            <div className="relative w-[15vw] h-[15vw]">
+              <Image
+                src="/logo.png"
+                alt="BP Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <h1 className="text-[13vw] font-black text-gold leading-none tracking-tighter uppercase whitespace-nowrap">
+              ORGANIK
+            </h1>
+          </motion.div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between pt-12 border-t border-white/5 gap-8 text-center md:text-left">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-12 border-t border-white/5 gap-8 text-center md:text-left mb-12">
           <p className="text-white/30 text-xs font-medium uppercase tracking-[0.2em]">
             © {currentYear} BP Agriculture Organic.
             <Translate
@@ -114,6 +134,24 @@ export default function Footer() {
               tr=" Tüm hakları saklıdır."
             />
           </p>
+          <div className="flex gap-8">
+            <Link
+              href="/privacy"
+              className="text-white/30 hover:text-white text-xs font-medium uppercase tracking-widest transition-colors"
+            >
+              <Translate en="Privacy Policy" ru="Политика" tr="Gizlilik" />
+            </Link>
+            <Link
+              href="/legal"
+              className="text-white/30 hover:text-white text-xs font-medium uppercase tracking-widest transition-colors"
+            >
+              <Translate
+                en="Legal Notice"
+                ru="Правовая информация"
+                tr="Yasal Uyarı"
+              />
+            </Link>
+          </div>
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full bg-[#cda558] shadow-[0_0_10px_#cda558]" />
             <p className="text-white/50 text-[10px] font-bold uppercase tracking-widest">

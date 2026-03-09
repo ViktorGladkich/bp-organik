@@ -30,7 +30,7 @@ export default function Halal() {
 
         <div className="w-[200px] h-[200px] md:w-[350px] md:h-[350px] relative shrink-0 mt-10 md:mt-0 lg:ml-20">
           <Image
-            src="/halal-badge.png"
+            src="/certifield-halal.png"
             fill
             className="object-contain drop-shadow-[0_0_30px_rgba(205,165,88,0.2)]"
             alt="Halal Premium Certified"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { LanguageProvider } from "@/context/LanguageContext";
 import SmoothScroll from "@/components/SmoothScroll";
+import ViewportFix from "@/components/ViewportFix";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -26,6 +27,7 @@ export default function RootLayout({
         className={`${montserrat.className} antialiased tracking-tight bg-[#0a0a0a] text-white`}
       >
         <SmoothScroll />
+        <ViewportFix />
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
