@@ -110,7 +110,7 @@ export default function Header() {
 
             <nav className="container mx-auto px-6 h-full flex flex-col justify-center relative z-10 overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-center">
-                <ul className="space-y-1 md:space-y-4">
+                <ul className="space-y-4 md:space-y-4 text-center lg:text-left">
                   {menuItems.map((item, i) => (
                     <motion.li
                       key={item.href}
@@ -121,14 +121,14 @@ export default function Header() {
                         duration: 0.8,
                         ease: [0.33, 1, 0.68, 1],
                       }}
-                      className="group overflow-hidden pr-20"
+                      className="group overflow-hidden lg:pr-20"
                     >
                       <Link
                         href={item.href}
                         onClick={() => setIsOpen(false)}
                         className="block text-4xl md:text-6xl font-semibold text-white/90 hover:text-[#cda558] transition-all tracking-tighter uppercase italic leading-tight"
                       >
-                        <span className="inline-block transition-transform group-hover:translate-x-4">
+                        <span className="inline-block transition-transform lg:group-hover:translate-x-4">
                           <Translate
                             en={item.labelEn}
                             ru={item.labelRu}
