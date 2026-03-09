@@ -7,9 +7,15 @@ import { useLanguage } from "@/context/LanguageContext";
 
 export default function Contact() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [formState, setFormState] = useState<"idle" | "loading" | "success">(
-    "idle",
-  );
+  const [formState, setFormState] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
   const { language } = useLanguage();
 
   const { scrollYProgress } = useScroll({
@@ -20,10 +26,32 @@ export default function Contact() {
   const y1 = useTransform(scrollYProgress, [0, 1], [-50, 50]);
   const y2 = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormState("loading");
-    setTimeout(() => setFormState("success"), 2000);
+
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setFormState("success");
+      } else {
+        setFormState("error");
+      }
+    } catch (error) {
+      setFormState("error");
+    }
+  };
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   return (
@@ -154,39 +182,51 @@ export default function Contact() {
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-12">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12">
                       <PremiumInput
                         label={
                           <Translate
                             en="FULL NAME"
-                            ru="ПОЛНОЕ ИМЯ"
+                            ru="ИМЯ И ФАМИЛИЯ"
                             tr="AD SOYAD"
                           />
                         }
                         placeholder={
                           language === "ru"
-                            ? "Имя и фамилия"
+                            ? "Александр Великий"
                             : language === "tr"
-                              ? "Adınız ve Soyadınız"
-                              : "Your full name"
+                              ? "Metehan Yıldız"
+                              : "John Doe"
                         }
+                        name="fullName"
+                        value={formData.fullName}
+                        onChange={handleChange}
+                        type="text"
                         required
                       />
                       <PremiumInput
+                        label={<Translate en="EMAIL" ru="EMAIL" tr="E-POSTA" />}
+                        placeholder="example@gmail.com"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        type="email"
+                        required
+                      />
+                      <PremiumInput
+                        className="md:col-span-2"
                         label={
                           <Translate
-                            en="CONNECT VIA"
-                            ru="СПОСОБ СВЯЗИ"
-                            tr="İLETİŞİM"
+                            en="PHONE NUMBER"
+                            ru="НОМЕР ТЕЛЕФОНА"
+                            tr="TELEFON NUMARASI"
                           />
                         }
-                        placeholder={
-                          language === "ru"
-                            ? "Email или телефон"
-                            : language === "tr"
-                              ? "E-posta veya telefon"
-                              : "Email or phone"
-                        }
+                        placeholder="+90 XXX XXX XX XX"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        type="tel"
                         required
                       />
                     </div>
@@ -196,6 +236,9 @@ export default function Contact() {
                       </label>
                       <textarea
                         required
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
                         className="w-full bg-white/2 border border-white/5 rounded-3xl p-8 text-white text-lg font-medium outline-none focus:border-[#cda558]/50 focus:bg-white/5 transition-all min-h-[180px] resize-none"
                         placeholder={
                           language === "ru"
@@ -205,6 +248,15 @@ export default function Contact() {
                               : "How can we help your journey?"
                         }
                       />
+                      {formState === "error" && (
+                        <p className="text-red-500 text-sm ml-2">
+                          <Translate
+                            en="An error occurred. Please try again or contact us directly."
+                            ru="Произошла ошибка. Пожалуйста, попробуйте еще раз или свяжитесь с нами напрямую."
+                            tr="Bir hata oluştu. Lütfen tekrar deneyin veya bizimle doğrudan iletişime geçin."
+                          />
+                        </p>
+                      )}
                     </div>
                     <motion.button
                       whileHover={{ scale: 1.02 }}
@@ -277,10 +329,11 @@ function ContactLink({
 
 function PremiumInput({
   label,
+  className = "",
   ...props
 }: { label: React.ReactNode } & React.InputHTMLAttributes<HTMLInputElement>) {
   return (
-    <div className="space-y-4 w-full group">
+    <div className={`space-y-4 w-full group ${className}`}>
       <label className="text-white/30 text-[10px] font-black uppercase tracking-[0.4em] ml-2 group-focus-within:text-[#cda558] transition-colors">
         {label}
       </label>

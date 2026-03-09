@@ -218,7 +218,7 @@ export default function DynamicHero() {
         {/* Jar Container */}
         <motion.div
           style={{ x: responsiveJarX, y: jarY, scale: jarScale }}
-          className="relative bottom-[-15vh] md:bottom-0 w-[70vw] md:w-[20vw] max-w-[350px] aspect-square pointer-events-none z-20"
+          className="relative bottom-[-15vh] md:bottom-0 w-[65vw] md:w-[20vw] max-w-[350px] aspect-square pointer-events-none z-20"
         >
           <Image
             src="/jar.png"
