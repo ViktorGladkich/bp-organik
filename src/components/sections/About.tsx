@@ -22,23 +22,23 @@ export default function About() {
       id="about"
       className="w-full bg-[#050505] py-32 md:py-48 overflow-hidden relative border-t border-white/5"
     >
-      <div className="container mx-auto px-6 max-w-7xl relative z-10">
-        {/* Large Decorative Background Text */}
-        <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-[0.02] flex flex-col justify-center gap-12 select-none">
-          <motion.div
-            style={{ x: x1 }}
-            className="text-[15vw] font-black whitespace-nowrap leading-none"
-          >
-            ESTABLISHED 2011 • 14 YEARS • PURE QUALITY •
-          </motion.div>
-          <motion.div
-            style={{ x: x2 }}
-            className="text-[15vw] font-black whitespace-nowrap leading-none"
-          >
-            GLOBAL STANDARD • HALAL CERTIFIED • BP ORGANIK •
-          </motion.div>
-        </div>
+      {/* Large Decorative Background Text */}
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none flex flex-col justify-center gap-12 select-none overflow-hidden z-0">
+        <motion.div
+          style={{ x: x1 }}
+          className="text-[18vw] md:text-[10vw] font-black whitespace-nowrap leading-none text-white/5"
+        >
+          ESTABLISHED 2011 • 14 YEARS • PURE QUALITY •
+        </motion.div>
+        <motion.div
+          style={{ x: x2 }}
+          className="text-[18vw] md:text-[15vw] font-black whitespace-nowrap leading-none text-white/5"
+        >
+          GLOBAL STANDARD • HALAL CERTIFIED • BP ORGANIK •
+        </motion.div>
+      </div>
 
+      <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           {/* Left Side: Story */}
           <div className="relative">

@@ -70,6 +70,7 @@ export default function Header() {
             src="/logo.png"
             alt="BP Organik"
             fill
+            sizes="(max-width: 768px) 80px, 128px"
             className="object-contain object-left"
           />
         </Link>

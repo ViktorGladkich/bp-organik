@@ -49,6 +49,7 @@ const Card: FC<iCardProps> = ({
             src={bgSrc}
             alt="Animal Background"
             fill
+            sizes="100vw"
             className="object-contain contrast-125"
           />
         </div>
@@ -105,6 +106,7 @@ const Card: FC<iCardProps> = ({
               src={src}
               alt={title_en}
               fill
+              sizes="(max-width: 768px) 100vw, 600px"
               priority={i === 0}
             />
           </div>

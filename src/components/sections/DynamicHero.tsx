@@ -142,6 +142,7 @@ export default function DynamicHero() {
                   src="https://i.pravatar.cc/100?img=1"
                   alt="Athlete"
                   fill
+                  sizes="40px"
                   className="object-cover"
                 />
               </div>
@@ -150,6 +151,7 @@ export default function DynamicHero() {
                   src="https://i.pravatar.cc/100?img=2"
                   alt="Athlete"
                   fill
+                  sizes="40px"
                   className="object-cover"
                 />
               </div>
@@ -158,6 +160,7 @@ export default function DynamicHero() {
                   src="https://i.pravatar.cc/100?img=3"
                   alt="Athlete"
                   fill
+                  sizes="40px"
                   className="object-cover"
                 />
               </div>
@@ -166,6 +169,7 @@ export default function DynamicHero() {
                   src="https://i.pravatar.cc/100?img=4"
                   alt="Athlete"
                   fill
+                  sizes="40px"
                   className="object-cover"
                 />
               </div>
@@ -210,6 +214,7 @@ export default function DynamicHero() {
             src="/hand.png"
             alt="Hand"
             fill
+            sizes="(max-width: 768px) 100vw, 800px"
             className="object-contain object-bottom"
             priority
           />
@@ -224,6 +229,7 @@ export default function DynamicHero() {
             src="/jar.png"
             alt="BP Organik Jar"
             fill
+            sizes="(max-width: 768px) 65vw, 350px"
             className="object-contain"
             priority
           />

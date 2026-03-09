@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Montserrat } from "next/font/google";
 import { LanguageProvider } from "@/context/LanguageContext";
 import SmoothScroll from "@/components/SmoothScroll";
@@ -11,7 +11,15 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700", "800"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#cda558",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bporganik.net"),
   title: {
     default: "BP ORGANIK | Premium Organic Recovery & Elite Bio-Formulas",
     template: "%s | BP ORGANIK",
@@ -31,7 +39,6 @@ export const metadata: Metadata = {
     "Turkey manufacturing",
   ],
   authors: [{ name: "BP ORGANIK" }],
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   icons: {
     icon: [
       { url: "/favicon/favicon.ico" },
