@@ -42,7 +42,7 @@ export default function Contact() {
       } else {
         setFormState("error");
       }
-    } catch (error) {
+    } catch {
       setFormState("error");
     }
   };

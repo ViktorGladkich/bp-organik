@@ -20,7 +20,7 @@ export default function LegalNotice() {
         <div className="prose prose-invert prose-gold max-w-none space-y-12 text-white/70 text-lg leading-relaxed">
           {/* Company Identity */}
           <section className="bg-white/5 p-8 rounded-3xl border border-white/10">
-            <h2 className="text-white text-2xl font-bold mb-6 uppercase tracking-tight italic text-[#cda558]">
+            <h2 className="text-[#cda558] text-2xl font-bold mb-6 uppercase tracking-tight italic">
               BP ORGANIK<span className="text-[#cda558]">.</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
