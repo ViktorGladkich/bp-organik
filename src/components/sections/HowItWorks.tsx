@@ -198,7 +198,7 @@ function StackedImage({
         opacity,
         zIndex: z,
       }}
-      className="absolute w-full max-w-[85vw] md:max-w-[380px] aspect-[4/5] mx-auto bg-[#111] rounded-3xl md:rounded-4xl overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.9)] border border-white/10 mt-8 md:mt-0"
+      className="absolute w-full max-w-[85vw] md:max-w-[380px] aspect-4/5 mx-auto bg-[#111] rounded-3xl md:rounded-4xl overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.9)] border border-white/10 mt-8 md:mt-0"
     >
       <Image
         src={step.image}

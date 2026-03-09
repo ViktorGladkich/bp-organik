@@ -33,12 +33,16 @@ export default function LegalNotice() {
                   />
                 </p>
                 <p className="text-white font-semibold">
-                  BP Agriculture Organic Ltd.
+                  BP TARIM ORGANİK GIDA İNŞAAT TARIM İTHALAT İHRACAT SANAYİ
+                  TİCARET LİMİTED ŞİRKETİ
                 </p>
                 <p className="text-white/40 text-xs font-bold uppercase tracking-widest">
                   <Translate en="Headquarters" ru="Штаб-квартира" tr="Merkez" />
                 </p>
-                <p className="text-white">Antalya, Turkey</p>
+                <p className="text-white">
+                  Etiler Mah. Evliya Çelebi Cad. No: 23 İç Kapı No: 106
+                  Muratpaşa / Antalya
+                </p>
                 <p className="text-white/40 text-xs font-bold uppercase tracking-widest">
                   <Translate
                     en="Authorized Representative"
@@ -53,7 +57,6 @@ export default function LegalNotice() {
                   <Translate en="Contact" ru="Контакты" tr="İletişim" />
                 </p>
                 <p className="text-white">Email: bp.organika@gmail.com</p>
-                <p className="text-white">Phone: +90 536 591 48 20</p>
                 <p className="text-white/40 text-xs font-bold uppercase tracking-widest">
                   <Translate
                     en="Register / Tax ID"
@@ -61,9 +64,12 @@ export default function LegalNotice() {
                     tr="Kayıt / Vergi No"
                   />
                 </p>
-                <p className="text-white">Antalya Chamber of Commerce</p>
                 <p className="text-white">
-                  Tax ID: [Enter your Turkish Tax ID here]
+                  Antalya Chamber of Commerce (ALTSO)
+                </p>
+                <p className="text-white">
+                  Ticaret Sicil No: 123397 <br />
+                  MERSİS NO: 0127114202200001
                 </p>
               </div>
             </div>

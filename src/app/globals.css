@@ -34,7 +34,7 @@ body {
   background: #050505;
 }
 ::-webkit-scrollbar-thumb {
-  background: #222;
+  background: #cda558;
   border-radius: 10px;
 }
 /* Burger Menu Styles */

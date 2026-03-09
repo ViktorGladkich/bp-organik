@@ -163,9 +163,12 @@ export default function Header() {
                       Follow Us
                     </p>
                     <div className="flex gap-8">
-                      <SocialLink label="Instagram" />
-                      <SocialLink label="WhatsApp" />
-                      <SocialLink label="Telegram" />
+                      <SocialLink
+                        label="Instagram"
+                        href="https://www.instagram.com/bporganika/"
+                      />
+                      <SocialLink label="WhatsApp" href="#" />
+                      <SocialLink label="Telegram" href="#" />
                     </div>
                   </div>
                 </motion.div>
@@ -187,10 +190,12 @@ export default function Header() {
   );
 }
 
-function SocialLink({ label }: { label: string }) {
+function SocialLink({ label, href }: { label: string; href: string }) {
   return (
     <a
-      href="#"
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className="text-white/60 hover:text-white transition-colors text-sm font-bold uppercase tracking-widest"
     >
       {label}

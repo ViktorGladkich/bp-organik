@@ -35,7 +35,10 @@ export default function Footer() {
               />
             </p>
             <div className="flex gap-6">
-              <SocialLink href="#" label="Instagram" />
+              <SocialLink
+                href="https://www.instagram.com/bporganika/"
+                label="Instagram"
+              />
               <SocialLink href="#" label="Telegram" />
               <SocialLink href="#" label="WhatsApp" />
             </div>
@@ -47,16 +50,16 @@ export default function Footer() {
               <Translate en="Navigation" ru="Навигация" tr="Navigasyon" />
             </h4>
             <ul className="space-y-4">
-              <FooterLink href="#products">
+              <FooterLink href="/#products">
                 <Translate en="The Collection" ru="Коллекция" tr="Koleksiyon" />
               </FooterLink>
-              <FooterLink href="#about">
+              <FooterLink href="/#about">
                 <Translate en="Company" ru="О компании" tr="Şirket" />
               </FooterLink>
-              <FooterLink href="#advantages">
+              <FooterLink href="/#advantages">
                 <Translate en="Advantages" ru="Преимущества" tr="Avantajlar" />
               </FooterLink>
-              <FooterLink href="#certificates">
+              <FooterLink href="/#certificates">
                 <Translate
                   en="Quality Control"
                   ru="Контроль качества"
@@ -85,17 +88,6 @@ export default function Footer() {
                   className="text-white/80 hover:text-[#cda558] transition-colors font-semibold tracking-tight"
                 >
                   bp.organika@gmail.com
-                </a>
-              </div>
-              <div>
-                <p className="text-white/30 text-[10px] font-bold uppercase tracking-widest mb-1">
-                  PHONE
-                </p>
-                <a
-                  href="tel:+905365914820"
-                  className="text-white/80 hover:text-[#cda558] transition-colors font-semibold tracking-tight"
-                >
-                  +90 536 591 48 20
                 </a>
               </div>
             </div>

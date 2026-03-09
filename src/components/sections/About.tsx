@@ -66,9 +66,9 @@ export default function About() {
               <div className="space-y-6 text-white/60 text-lg md:text-xl font-medium max-w-xl leading-relaxed">
                 <p>
                   <Translate
-                    en="Founded in 2011, our company has grown from a local producer to a global standard-setter in organic recovery. We specialize in the most potent natural compounds adapted for high-stress performance."
-                    ru="Основанная в 2011 году, наша компания прошла путь от локального производителя до глобального лидера в области органического восстановления. Мы специализируемся на мощнейших природных компонентах."
-                    tr="2011 yılında kurulan şirketimiz, yerel bir üreticiden organik toparlanma alanında küresel bir standart belirleyiciye dönüşmüştür. Yüksek stresli performanslar için en güçlü doğal bileşenlerde uzmanız."
+                    en="Founded in 2011, our company is a premier Turkish-Russian Trading House that has evolved into a global standard-setter in organic recovery. We bridge continents to deliver the most potent natural compounds."
+                    ru="Основанная в 2011 году, наша компания является ведущим турецко-российским торговым домом, ставшим мировым эталоном в области органического восстановления."
+                    tr="2011 yılında kurulan şirketimiz, organik toparlanma alanında küresel bir standart belirleyiciye dönüşmüş, önde gelen bir Türk-Rus Ticaret Evi'dir."
                   />
                 </p>
                 <div className="flex items-center gap-4 py-4">

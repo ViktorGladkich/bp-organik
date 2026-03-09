@@ -107,9 +107,9 @@ export default function Contact() {
               <p className="text-white text-2xl font-medium tracking-tight leading-snug">
                 Antalya, Turkey <br />
                 <Translate
-                  en="Global Distribution Hub"
-                  ru="Глобальный дистрибьюторский хаб"
-                  tr="Küresel Dağıtım Merkezi"
+                  en="Turkish-Russian Trading House"
+                  ru="Турецко-российский торговый дом"
+                  tr="Türk-Rus Ticaret Evi"
                 />
               </p>
               <div className="w-8 h-px bg-[#cda558] mt-6 group-hover:w-full transition-all duration-700" />
@@ -122,16 +122,11 @@ export default function Contact() {
                 href="mailto:bp.organika@gmail.com"
               />
               <ContactLink
-                label={<Translate en="Phone" ru="Телефон" tr="Telefon" />}
-                value="+90 536 591 48 20"
-                href="tel:+905365914820"
-              />
-              <ContactLink
                 label={
                   <Translate en="Instagram" ru="Инстаграм" tr="Instagram" />
                 }
-                value="@bporganik"
-                href="#"
+                value="@bporganika"
+                href="https://www.instagram.com/bporganika/"
               />
             </div>
           </div>
@@ -193,7 +188,7 @@ export default function Contact() {
                         }
                         placeholder={
                           language === "ru"
-                            ? "Александр Великий"
+                            ? "Александр"
                             : language === "tr"
                               ? "Metehan Yıldız"
                               : "John Doe"

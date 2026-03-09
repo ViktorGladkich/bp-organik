@@ -54,6 +54,11 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/favicon/site.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "BP ORGANIK",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",

@@ -114,7 +114,7 @@ export default function DynamicHero() {
         {/* Initial Left Text */}
         <motion.div
           style={{ opacity: initialOpacity, y: initialY }}
-          className="absolute top-[18%] left-[5%] md:left-[5%] w-[90vw] md:w-[60vw] max-w-[800px] z-10 pointer-events-none"
+          className="absolute top-[18%] left-[5%] md:left-[3%] w-[90vw] md:w-[60vw] max-w-[800px] z-10 pointer-events-none"
         >
           <h1
             className={`text-white tracking-tight font-medium leading-[1.1] ${
@@ -194,7 +194,7 @@ export default function DynamicHero() {
         {/* Initial Right Text */}
         <motion.div
           style={{ opacity: initialOpacity, y: initialY }}
-          className="absolute top-[40%] md:top-[50%] right-[5%] md:right-[5%] w-[90vw] md:w-[30vw] max-w-[400px] z-10 pointer-events-none md:text-right hidden md:block"
+          className="absolute top-[40%] md:top-[50%] right-[5%] md:right-[3%] w-[90vw] md:w-[30vw] max-w-[400px] z-10 pointer-events-none md:text-right hidden md:block"
         >
           <p className="text-lg md:text-2xl text-white/90 font-medium leading-snug tracking-tight">
             <Translate
@@ -208,7 +208,7 @@ export default function DynamicHero() {
         {/* Hand Container */}
         <motion.div
           style={{ y: handY, opacity: handOpacity }}
-          className="absolute bottom-0 md:bottom-[-10vh] left-[50%] -translate-x-1/2 w-[120vw] md:w-[60vw] max-w-[800px] aspect-4/3 pointer-events-none"
+          className="absolute bottom-0 md:bottom-[-10vh] left-[50%] md:left-[57%] -translate-x-1/2 w-[120vw] md:w-[60vw] max-w-[800px] aspect-4/3 pointer-events-none"
         >
           <Image
             src="/hand.png"
@@ -223,7 +223,7 @@ export default function DynamicHero() {
         {/* Jar Container */}
         <motion.div
           style={{ x: responsiveJarX, y: jarY, scale: jarScale }}
-          className="relative bottom-[-15vh] md:bottom-0 w-[65vw] md:w-[20vw] max-w-[350px] aspect-square pointer-events-none z-20"
+          className="relative bottom-[-15vh]  md:left-[8%] md:bottom-0 w-[65vw] md:w-[20vw] max-w-[350px] aspect-square pointer-events-none z-20"
         >
           <Image
             src="/jar.png"
