@@ -21,7 +21,13 @@ export default function LegalNotice() {
           {/* Company Identity */}
           <section className="bg-white/5 p-8 rounded-3xl border border-white/10">
             <h2 className="text-[#cda558] text-2xl font-bold mb-6 uppercase tracking-tight italic">
-              BP ORGANIK<span className="text-[#cda558]">.</span>
+              AZARS •{" "}
+              <Translate
+                en="Trading House"
+                ru="Торговый Дом"
+                tr="Ticaret Evi"
+              />
+              <span className="text-[#cda558]">.</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-4">

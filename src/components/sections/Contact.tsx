@@ -107,9 +107,9 @@ export default function Contact() {
               <p className="text-white text-2xl font-medium tracking-tight leading-snug">
                 Antalya, Turkey <br />
                 <Translate
-                  en="Turkish-Russian Trading House"
-                  ru="Турецко-российский торговый дом"
-                  tr="Türk-Rus Ticaret Evi"
+                  en="AZARS • Turkish-Russian Trading House"
+                  ru="AZARS • Турецко-Российский Торговый Дом"
+                  tr="AZARS • Türk-Rus Ticaret Evi"
                 />
               </p>
               <div className="w-8 h-px bg-[#cda558] mt-6 group-hover:w-full transition-all duration-700" />

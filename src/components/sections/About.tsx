@@ -108,9 +108,9 @@ export default function About() {
               </div>
               <h3 className="text-[#cda558] text-2xl md:text-3xl font-bold mb-6 uppercase tracking-tight italic">
                 <Translate
-                  en="Turkish-Russian Trading House"
-                  ru="Турецко-Российский Торговый Дом"
-                  tr="Türk-Rus Ticaret Evi"
+                  en="AZARS • Turkish-Russian Trading House"
+                  ru="AZARS • Турецко-Российский Торговый Дом"
+                  tr="AZARS • Türk-Rus Ticaret Evi"
                 />
               </h3>
               <p className="text-white/80 text-base md:text-lg leading-relaxed font-medium">
