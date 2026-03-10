@@ -31,7 +31,7 @@ export default function Footer() {
               <Translate
                 en="Dedicated to the athletic pursuit of natural excellence."
                 ru="Помогаем атлетам достигать природных вершин."
-                tr="Doğal mükemmelliğin atletik arayışına adanmıştır."
+                tr="“Doğal mükemmelliğin atletik performans arayışına adanmıştır.”"
               />
             </p>
             <div className="flex gap-6">

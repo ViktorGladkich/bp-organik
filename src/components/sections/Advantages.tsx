@@ -36,7 +36,7 @@ export default function Advantages() {
             viewport={{ once: true }}
             className={`font-sans font-medium text-4xl md:text-6xl xl:text-[70px] tracking-tight text-[#cda558] uppercase mb-2 leading-[1.05] drop-shadow-sm`}
           >
-            <Translate en="ADVANTAGES" ru="ПРЕИМУЩЕСТВА" tr="AVANTAJLAR" />
+            <Translate en="ADVANTAGES" ru="ПРЕИМУЩЕСТВА" tr="KOMPLEKSİN" />
           </motion.h2>
           <motion.h3
             initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export default function Advantages() {
             transition={{ delay: 0.1 }}
             className={`font-sans font-medium text-xl md:text-[30px] tracking-tight text-white/50 uppercase leading-none drop-shadow-sm`}
           >
-            <Translate en="OF THE COMPLEX" ru="КОМПЛЕКСА" tr="KOMPLEKSIN" />
+            <Translate en="OF THE COMPLEX" ru="КОМПЛЕКСА" tr="AVANTAJLARI" />
           </motion.h3>
         </div>
 
@@ -62,14 +62,14 @@ export default function Advantages() {
               <Translate
                 en="Our natural recovery formula is built from pure organic compounds containing essential lipids and nutrients specifically adapted for peak physical performance."
                 ru="Наша природная формула восстановления создана из чистых органических соединений, содержащих полезные кислоты и нутриенты, специально подобранные для пиковых физических нагрузок."
-                tr="Doğal toparlanma formülümüz, en yüksek fiziksel performans için özel olarak uyarlanmış temel biyolojik bileşenler ve besin maddeleri içeren saf organik yapılardan oluşturulmuştur."
+                tr="Doğal toparlanma formülümüz, yüksek fiziksel performansı desteklemek için özel olarak seçilmiş temel biyolojik bileşenler ve besin maddelerinden oluşur."
               />
             </p>
             <p>
               <Translate
                 en="They act as a vital class of bio-accelerators, providing multi-directional beneficial effects: repairing tissues, reducing inflammation, and replenishing extreme energy loss."
                 ru="Они действуют как жизненно важный класс био-ускорителей, оказывая разнонаправленные полезные эффекты: восстановление тканей, снижение воспаления и восполнение экстремальных энергозатрат."
-                tr="Dokuları onarmaya, iltihabı azaltmaya ve aşırı enerji kaybını telafi etmeye yönelik çok yönlü faydalı etkiler sağlayan hayati bir biyo-hızlandırıcı sınıfı olarak hareket ederler."
+                tr="Doku yenilenmesini destekleyen, inflamasyonu azaltmaya yardımcı olan ve enerji kaybını dengeleyen çok yönlü bir biyolojik destek sistemi olarak çalışır."
               />
             </p>
           </motion.div>
@@ -81,7 +81,7 @@ export default function Advantages() {
                 {
                   en: "100% natural and Halal",
                   ru: "100% натурально и Халяль",
-                  tr: "100% Doğal ve Helal",
+                  tr: "%100 doğal ve Helal sertifikalı",
                 },
                 {
                   en: "Maximum bioavailability",
@@ -91,17 +91,17 @@ export default function Advantages() {
                 {
                   en: "Accelerates tissue regeneration",
                   ru: "Ускоряет регенерацию мышечной ткани",
-                  tr: "Doku yenilenmesini hızlandırır",
+                  tr: "Doku yenilenmesini destekler",
                 },
                 {
                   en: "Increases pain threshold & endurance",
                   ru: "Повышает болевой порог и выносливость",
-                  tr: "Ağrı eşiğini ve dayanıklılığı artırır",
+                  tr: "Dayanıklılığı ve performansı artırmaya yardımcı olur",
                 },
                 {
                   en: "No doping, 100% legal for sports",
                   ru: "Не является допингом, разрешено в спорте",
-                  tr: "Doping içermez, spor için %100 yasal",
+                  tr: "Doping içermez, sporcular için %100 yasal",
                 },
               ].map((item, index) => (
                 <motion.li

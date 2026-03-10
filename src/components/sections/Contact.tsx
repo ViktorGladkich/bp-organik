@@ -94,7 +94,7 @@ export default function Contact() {
             <Translate
               en="VITAL POTENTIAL"
               ru="ПИКОВЫЙ УРОВЕНЬ"
-              tr="ZİRVE POTANSİYELE ULAŞIN"
+              tr="ZİRVE POTANSİYELİNİZE ULAŞIN"
             />
           </motion.h2>
         </div>
@@ -167,14 +167,14 @@ export default function Contact() {
                       <Translate
                         en="Transmission Complete"
                         ru="Сообщение отправлено"
-                        tr="İletim Tamamlandı"
+                        tr="“Mesajınız başarıyla gönderildi.”"
                       />
                     </h3>
                     <p className="text-white/40 text-xl font-medium max-w-sm">
                       <Translate
                         en="Our specialists are reviewing your request."
                         ru="Наши специалисты скоро свяжутся с вами."
-                        tr="Uzmanlarımız talebinizi inceliyor."
+                        tr="“Uzmanlarımız talebinizi inceliyor.”"
                       />
                     </p>
                   </motion.div>
@@ -251,7 +251,7 @@ export default function Contact() {
                           <Translate
                             en="An error occurred. Please try again or contact us directly."
                             ru="Произошла ошибка. Пожалуйста, попробуйте еще раз или свяжитесь с нами напрямую."
-                            tr="Bir hata oluştu. Lütfen tekrar deneyin veya bizimle doğrudan iletişime geçin."
+                            tr="“Bir hata oluştu. Lütfen tekrar deneyin veya bizimle doğrudan iletişime geçin.”"
                           />
                         </p>
                       )}

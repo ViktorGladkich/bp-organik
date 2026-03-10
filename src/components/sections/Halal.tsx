@@ -35,7 +35,7 @@ export default function Halal() {
             <Translate
               en="100% compliant with Halal dietary laws, free from any synthetic or forbidden substances. Pure power from nature."
               ru="100% соответствует стандартам Халяль, не содержит синтетических или запрещенных веществ. Чистая энергия природы."
-              tr="%100 Helal beslenme kurallarına uygun, sentetik veya yasaklı maddeler içermez. Doğadan gelen saf güç."
+              tr="“%100 Helal beslenme kurallarına uygun olarak üretilmiştir. Sentetik veya yasaklı maddeler içermez. Doğadan gelen saf güç.”"
             />
           </motion.p>
         </div>

@@ -62,7 +62,7 @@ export default function About() {
                 <Translate
                   en="The Standard of Uncompromising Excellence."
                   ru="Стандарт бескомпромиссного качества."
-                  tr="Tavizsiz Mükemmellik Standardı."
+                  tr="“Tavizsiz Mükemmellik Standardı”"
                 />
               </h2>
               <div className="space-y-6 text-white/60 text-lg md:text-xl font-medium max-w-xl leading-relaxed">
@@ -70,7 +70,7 @@ export default function About() {
                   <Translate
                     en="Our company is a premier Turkish-Russian Trading House that has evolved into a global standard-setter in organic recovery. We bridge continents to deliver the most potent natural compounds."
                     ru="Наша компания является ведущим турецко-российским торговым домом, ставшим мировым эталоном в области органического восстановления."
-                    tr="Şirketimiz, organik toparlanma alanında küresel bir standart belirleyiciye dönüşmüş, önde gelen bir Türk-Rus Ticaret Evi'dir."
+                    tr="“Şirketimiz, organik toparlanma alanında küresel bir standart oluşturan, önde gelen bir Türk-Rus Ticaret Evi’dir.”"
                   />
                 </p>
                 <div className="py-4">
@@ -78,7 +78,7 @@ export default function About() {
                     <Translate
                       en="Trusted by professionals worldwide."
                       ru="Доверие профессионалов по всему миру."
-                      tr="Dünya çapındaki profesyonellerin güveni."
+                      tr="“Dünya çapındaki profesyoneller tarafından güvenilmektedir.”"
                     />
                   </p>
                 </div>
@@ -118,7 +118,7 @@ export default function About() {
                   <Translate
                     en="A dedicated commercial bridge facilitating seamless cooperation and conscious organic distribution between the Republic of Turkey and the Russian Federation."
                     ru="Профессиональный торговый мост, обеспечивающий бесперебойное сотрудничество и дистрибуцию оздоровительных органических продуктов между Турецкой Республикой и Российской Федерацией."
-                    tr="Türkiye Cumhuriyeti ile Rusya Federasyonu arasında sorunsuz iş birliği ve bilinçli organik dağıtım sağlayan nitelikli bir ticari köprü."
+                    tr="“Türkiye Cumhuriyeti ile Rusya Federasyonu arasında sorunsuz iş birliği ve bilinçli organik dağıtım sağlayan güçlü bir ticari köprü.”"
                   />
                 </p>
               </CardSticky>
@@ -149,7 +149,7 @@ export default function About() {
                   <Translate
                     en="Our primary production facility in Turkey specializes in advanced extraction and organic formulation, adhering to global quality and Halal standards."
                     ru="Наш основной производственный центр в Турции специализируется на высокотехнологичной экстракции и разработке органических формул."
-                    tr="Türkiye'deki ana üretim tesisimiz, küresel kalite ve Helal standartlarına bağlı kalarak doğal enerji bileşiklerinin ileri düzey ekstraksiyonu konusunda uzmanlaşmıştır."
+                    tr="“Türkiye’deki ana üretim tesisimiz, küresel kalite ve Helal standartlarına uygun olarak doğal enerji bileşiklerinin ileri düzey ekstraksiyonu konusunda uzmanlaşmıştır.”"
                   />
                 </p>
               </CardSticky>
@@ -180,7 +180,7 @@ export default function About() {
                   <Translate
                     en="The official strategic partner responsible for large-scale distribution across the EAEU, ensuring availability in professional pharmacies."
                     ru="Официальный стратегический партнер, ответственный за масштабную дистрибуцию на территории ЕАЭС и доступность в аптечных сетях."
-                    tr="EAEU genelinde geniş ölçekli dağıtımdan sorumlu, profesyonel eczanelerde bulunabilirliği sağlayan resmi stratejik ortak."
+                    tr="“EAEU genelinde geniş ölçekli dağıtımdan sorumlu resmi stratejik ortak. Ürünlerin profesyonel eczanelerde bulunabilirliğini sağlar.”"
                   />
                 </p>
               </CardSticky>

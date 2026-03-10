@@ -132,7 +132,7 @@ export default function DynamicHero() {
             <Translate
               en="recovery revealed."
               ru="восстановление."
-              tr="dinlenmen ortaya."
+              tr="dinlenme deneyimini keşfedin."
             />
           </h1>
           <div className="mt-8 flex items-center gap-3">
@@ -200,7 +200,7 @@ export default function DynamicHero() {
             <Translate
               en="We strip away the unnecessary to focus on what truly works."
               ru="Мы убираем всё лишнее, чтобы сосредоточиться на том, что действительно работает."
-              tr="Gerçekten işe yarayana odaklanmak için gereksiz olanları çıkarıyoruz."
+              tr="Gerçekten işe yarayan çözümlere odaklanmak için gereksiz olan her şeyi ortadan kaldırıyoruz."
             />
           </p>
         </motion.div>
@@ -253,7 +253,7 @@ export default function DynamicHero() {
             className="text-5xl md:text-[80px] lg:text-[100px] text-white tracking-tight font-medium leading-none drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]"
             en="Reveal your inner strength."
             ru="Открой свою внутреннюю силу."
-            tr="İçsel gücünü ortaya çıkar."
+            tr="İçsel gücünüzü ortaya çıkarın."
             progress={scrollYProgress}
             range={[0.15, 0.22]}
           />
@@ -261,7 +261,7 @@ export default function DynamicHero() {
             className="text-2xl md:text-5xl text-white/70 font-medium tracking-tight mt-2 md:mt-6"
             en="Accelerate your peak performance."
             ru="Ускорь свои лучшие достижения."
-            tr="Zirve performansını hızlandır."
+            tr="Zirve performansınızı hızlandırın."
             progress={scrollYProgress}
             range={[0.2, 0.28]}
           />
@@ -277,7 +277,7 @@ export default function DynamicHero() {
             title_tr="MAKSİMUM BİYOYARARLANIM"
             desc_en="Absorbs significantly faster than regular supplements, giving you immediate support exactly when you need it."
             desc_ru="Усваивается значительно быстрее обычных добавок, обеспечивая мгновенную поддержку организма."
-            desc_tr="Sıradan takviyelere göre çok daha hızlı emilir, tam ihtiyacınız olduğunda anında destek verir."
+            desc_tr="Sıradan takviyelere kıyasla çok daha hızlı emilir ve vücudunuzun en çok ihtiyaç duyduğu anda anında destek sağlar."
           />
           <ScrollCard
             anim={card02}
@@ -287,17 +287,17 @@ export default function DynamicHero() {
             title_tr="DERİN DOKU ONARIMI"
             desc_en="We strip away the unnecessary to focus on penetrating cellular repair that truly works after intense stress."
             desc_ru="Мы убираем все лишнее, чтобы сфокусироваться на клеточном восстановлении после интенсивных нагрузок."
-            desc_tr="Gereksiz olanı çıkarıp yoğun stresten sonra gerçekten işe yarayan hücresel onarıma odaklanıyoruz."
+            desc_tr="Gereksiz bileşenleri ortadan kaldırarak yoğun fiziksel stres sonrasında gerçek hücresel onarıma odaklanıyoruz."
           />
           <ScrollCard
             anim={card03}
             num="03"
             title_en="100% HALAL CERTIFIED"
             title_ru="100% СЕРТИФИКАТ ХАЛЯЛЬ"
-            title_tr="100% HELAL SERTİFİKALI"
+            title_tr="%100 HELAL SERTİFİKALI"
             desc_en="Fully ethical, pure, and compliant with all religious requirements. No synthetic fillers. No compromises."
             desc_ru="Полностью этично, чисто и соответствует всем религиозным требованиям. Без компромиссов."
-            desc_tr="Tamamen etik, saf ve tüm dini gerekliliklere uygundur. Sentetik dolgu maddesi içermez. Taviz yok."
+            desc_tr="Tamamen etik, saf ve tüm dini gerekliliklere uygundur. Sentetik dolgu maddeleri içermez. Taviz yok."
           />
           <ScrollCard
             anim={card04}
@@ -307,7 +307,7 @@ export default function DynamicHero() {
             title_tr="VİTAL PERFORMANS"
             desc_en="Trusted by athletes. Engineered for endurance, strength, and unrivaled natural recovery."
             desc_ru="Выбор профессиональных атлетов. Создано для выносливости, силы и природного восстановления."
-            desc_tr="Sporcuların güvendiği ürün. Dayanıklılık, güç ve eşsiz doğal toparlanma için özel olarak tasarlandı."
+            desc_tr="Sporcuların güvendiği formül. Dayanıklılık, güç ve doğal toparlanmayı desteklemek için özel olarak geliştirilmiştir."
           />
         </div>
       </div>

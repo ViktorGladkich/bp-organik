@@ -23,7 +23,7 @@ export default function Certificates() {
             <Translate
               en="The company has all the necessary quality certificates, medical reports, and documents confirming the product's safety."
               ru="Компания имеет все необходимые сертификаты качества, медицинские заключения и документы, подтверждающие безопасность продукта."
-              tr="Şirket, ürün güvenliğini onaylayan tüm gerekli kalite sertifikalarına, tıbbi raporlara ve belgelere sahiptir."
+              tr="“Şirketimiz, ürün güvenliğini doğrulayan gerekli tüm kalite sertifikalarına, tıbbi raporlara ve resmi belgelere sahiptir.”"
             />
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function Certificates() {
             <Translate
               en="Our product is approved for sale in pharmacies. This is a natural product, in the production of which all sanitary standards are strictly observed."
               ru="Наш продукт допущен к реализации в аптеках. Это натуральный продукт, при производстве которого строго соблюдаются все санитарные нормы."
-              tr="Ürünümüz eczanelerde satış için onaylanmıştır. Bu, üretimi sırasında tüm sıhhi standartlara sıkı sıkıya uyulan doğal bir üründür."
+              tr="“Ürünümüz eczanelerde satış için onaylanmıştır ve üretim sürecinde tüm hijyen ve sağlık standartlarına titizlikle uyulmaktadır.”"
             />
           </p>
         </div>

@@ -154,7 +154,7 @@ export default function Header() {
                       <Translate
                         en="Pure. Biological. Performance for the modern athlete."
                         ru="Чистота. Биология. Результат для современного атлета."
-                        tr="Saf. Biyolojik. Modern sporcu için performans."
+                        tr="Saf. Biyolojik. Modern sporcu için üstün performans."
                       />
                     </p>
                   </div>

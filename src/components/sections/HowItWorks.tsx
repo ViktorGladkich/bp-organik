@@ -13,31 +13,31 @@ const STEPS = [
     desc_en:
       "Start your daily peak optimization with a single high-potency intake.",
     desc_ru: "Начните ежедневную оптимизацию с одного правильного приема.",
-    desc_tr:
-      "Günlük zirve optimizasyonunuza tek bir sağlıklı ritüelle başlayın.",
+    desc_tr: "“Organik kompleksin günlük yaşam rutininize entegrasyonu.”",
     image: "/how-it-works/step1_v2.png",
   },
   {
     id: "02",
     title_en: "Absorption",
     title_ru: "Усвоение",
-    title_tr: "Emilim",
+    title_tr: "Biyo-Emilim",
     desc_en:
       "Bio-active ingredients bypass barriers for immediate cellular repair.",
     desc_ru:
       "Биоактивные ингредиенты обходят барьеры для мгновенного восстановления.",
     desc_tr:
-      "Biyo-aktif bileşenler, anında hücresel onarım için engelleri aşar.",
+      "“Besinlerin ve temel asitlerin hücresel yapılara hızlı ve etkili şekilde taşınması.”",
     image: "/how-it-works/step2_v2.png",
   },
   {
     id: "03",
     title_en: "Vital Performance",
     title_ru: "Результат",
-    title_tr: "Performans",
+    title_tr: "Vital Performans",
     desc_en: "Experience natural resilience and vital results in your routine.",
     desc_ru: "Испытайте природную выносливость и оздоровительный результат.",
-    desc_tr: "Doğal dayanıklılığı ve sağlıklı performansı deneyimleyin.",
+    desc_tr:
+      "“Fiziksel performansın en üst seviyeye ulaşmasını ve hızlı toparlanmayı destekler.”",
     image: "/how-it-works/step3_v2.png",
   },
   {
@@ -49,7 +49,8 @@ const STEPS = [
       "Maintain peak biological state through consistent revitalisation.",
     desc_ru:
       "Поддерживайте пиковое состояние за счет постоянного восстановления.",
-    desc_tr: "Sürekli canlanma yoluyla en yüksek biyolojik durumu koruyun.",
+    desc_tr:
+      "“Sistemik biyolojik dengenin korunması ve uzun vadeli adaptif destek.”",
     image: "/how-it-works/step4_v2.png",
   },
 ];
@@ -75,14 +76,14 @@ export default function HowItWorks() {
                   <Translate
                     en="Vital results"
                     ru="Живой результат"
-                    tr="Hayati sonuçlar"
+                    tr="HASAT BURADA"
                   />
                 </span>
                 <span className="block text-[#cda558] italic font-light md:pl-32 mt-2">
                   <Translate
                     en="starts here."
                     ru="начинается здесь."
-                    tr="bizimle başlar."
+                    tr="BAŞLAR"
                   />
                 </span>
               </h2>
@@ -102,7 +103,7 @@ export default function HowItWorks() {
                 <Translate
                   en="The methodology behind the bio-transformation process."
                   ru="Методология процесса био-трансформации вашего организма."
-                  tr="Biyo-transformasyon sürecinin arkasındaki metodoloji."
+                  tr="“Geleneksel bilgeliği modern hücresel bilimle birleştiren saf ve yüksek verimli organik bileşiklerin üretim süreci.”"
                 />
               </p>
             </motion.div>
