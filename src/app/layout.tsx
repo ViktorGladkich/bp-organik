@@ -21,18 +21,18 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://bporganik.net"),
   title: {
-    default: "BP ORGANIK | Premium Organic Recovery & Elite Bio-Formulas",
+    default: "BP ORGANIK | Advanced Organic Recovery & Bio-Active Formulas",
     template: "%s | BP ORGANIK",
   },
   description:
-    "Potent natural compounds adapted for high-stress performance and organic recovery. Halal-certified organic fats and bio-ointments from Turkey's leading manufacturer.",
+    "Potent natural compounds adapted for high-stress performance and organic recovery. Halal-certified organic extracts and bio-ointments from Turkey's leading manufacturer.",
   keywords: [
     "organic products",
     "halal certified",
     "natural recovery",
-    "camel hump oil",
-    "goat fat",
-    "deer visceral fat",
+    "camel hump essence",
+    "goat bio-compound",
+    "deer vitality extract",
     "sports recovery",
     "performance enhancement",
     "BP Organik",
@@ -63,22 +63,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://bporganik.net",
-    siteName: "BP ORGANIK • Elite Organic Bio-Compounds",
+    siteName: "BP ORGANIK • Bio-Active Organic Compounds",
     title: "BP ORGANIK | The Science of Ancestral Recovery",
     description:
-      "Discover premium Halal-certified organic formulas designed for elite human performance and natural longevity. Engineered in Turkey.",
+      "Discover advanced Halal-certified organic formulas designed for peak performance and natural longevity. Engineered in Turkey.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "BP ORGANIK - Premium Organic Selection",
+        alt: "BP ORGANIK - Pure Organic Selection",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "BP ORGANIK | Elite Bio-Formulas for Performance",
+    title: "BP ORGANIK | Bio-Active Formulas for Performance",
     description:
       "Pure organic compounds for deep recovery and peak physiological balance. Trusted by professionals.",
     images: ["/og-image.png"],

@@ -100,7 +100,7 @@ export default function DynamicHero() {
       <div className="sticky top-0 w-full h-[calc(var(--vh,1vh)*100)] overflow-hidden bg-[#050505] flex justify-center items-center">
         {/* Large Background Text */}
         <motion.div
-          style={{ opacity: bgTextOpacity }}
+          style={{ opacity: bgTextOpacity, willChange: "opacity" }}
           className="absolute bottom-[-2vw] left-0 w-full text-center pointer-events-none z-0 overflow-hidden"
         >
           <span className="text-[20vw] font-semibold text-white uppercase leading-none tracking-tighter block whitespace-nowrap">
@@ -207,7 +207,11 @@ export default function DynamicHero() {
 
         {/* Hand Container */}
         <motion.div
-          style={{ y: handY, opacity: handOpacity }}
+          style={{
+            y: handY,
+            opacity: handOpacity,
+            willChange: "transform, opacity",
+          }}
           className="absolute bottom-0 md:bottom-[-10vh] left-[50%] md:left-[57%] -translate-x-1/2 w-[120vw] md:w-[60vw] max-w-[800px] aspect-4/3 pointer-events-none"
         >
           <Image
@@ -222,7 +226,12 @@ export default function DynamicHero() {
 
         {/* Jar Container */}
         <motion.div
-          style={{ x: responsiveJarX, y: jarY, scale: jarScale }}
+          style={{
+            x: responsiveJarX,
+            y: jarY,
+            scale: jarScale,
+            willChange: "transform",
+          }}
           className="relative bottom-[-15vh]  md:left-[8%] md:bottom-0 w-[65vw] md:w-[20vw] max-w-[350px] aspect-square pointer-events-none z-20"
         >
           <Image
@@ -293,9 +302,9 @@ export default function DynamicHero() {
           <ScrollCard
             anim={card04}
             num="04"
-            title_en="ELITE PERFORMANCE"
-            title_ru="ЭЛИТНАЯ ПРОИЗВОДИТЕЛЬНОСТЬ"
-            title_tr="ELİT PERFORMANS"
+            title_en="VITAL PERFORMANCE"
+            title_ru="МАКСИМАЛЬНАЯ ЭФФЕКТИВНОСТЬ"
+            title_tr="VİTAL PERFORMANS"
             desc_en="Trusted by athletes. Engineered for endurance, strength, and unrivaled natural recovery."
             desc_ru="Выбор профессиональных атлетов. Создано для выносливости, силы и природного восстановления."
             desc_tr="Sporcuların güvendiği ürün. Dayanıklılık, güç ve eşsiz doğal toparlanma için özel olarak tasarlandı."

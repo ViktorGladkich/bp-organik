@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Translate from "@/components/Translate";
 
 export default function Advantages() {
@@ -27,26 +30,39 @@ export default function Advantages() {
 
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <div className="mb-14 text-center">
-          <h2
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             className={`font-sans font-medium text-4xl md:text-6xl xl:text-[70px] tracking-tight text-[#cda558] uppercase mb-2 leading-[1.05] drop-shadow-sm`}
           >
             <Translate en="ADVANTAGES" ru="ПРЕИМУЩЕСТВА" tr="AVANTAJLAR" />
-          </h2>
-          <h3
+          </motion.h2>
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
             className={`font-sans font-medium text-xl md:text-[30px] tracking-tight text-white/50 uppercase leading-none drop-shadow-sm`}
           >
             <Translate en="OF THE COMPLEX" ru="КОМПЛЕКСА" tr="KOMPLEKSIN" />
-          </h3>
+          </motion.h3>
         </div>
 
         <div className="flex flex-col md:flex-row gap-16 md:gap-24 mt-16">
           {/* Left Text Box */}
-          <div className="flex-1 text-white/70 text-lg md:text-2xl leading-relaxed font-sans font-medium space-y-6 max-w-lg text-center md:text-left">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="flex-1 text-white/70 text-lg md:text-2xl leading-relaxed font-sans font-medium space-y-6 max-w-lg text-center md:text-left"
+          >
             <p>
               <Translate
-                en="Our natural recovery formula is built from pure organic compounds containing essential fatty acids and nutrients specifically adapted for peak physical performance."
-                ru="Наша природная формула восстановления создана из чистых органических соединений, содержащих незаменимые кислоты и нутриенты, специально подобранные для пиковых физических нагрузок."
-                tr="Doğal toparlanma formülümüz, en yüksek fiziksel performans için özel olarak uyarlanmış temel yağ asitleri ve besin maddeleri içeren saf organik bileşiklerden oluşturulmuştur."
+                en="Our natural recovery formula is built from pure organic compounds containing essential lipids and nutrients specifically adapted for peak physical performance."
+                ru="Наша природная формула восстановления создана из чистых органических соединений, содержащих полезные кислоты и нутриенты, специально подобранные для пиковых физических нагрузок."
+                tr="Doğal toparlanma formülümüz, en yüksek fiziksel performans için özel olarak uyarlanmış temel biyolojik bileşenler ve besin maddeleri içeren saf organik yapılardan oluşturulmuştur."
               />
             </p>
             <p>
@@ -56,7 +72,7 @@ export default function Advantages() {
                 tr="Dokuları onarmaya, iltihabı azaltmaya ve aşırı enerji kaybını telafi etmeye yönelik çok yönlü faydalı etkiler sağlayan hayati bir biyo-hızlandırıcı sınıfı olarak hareket ederler."
               />
             </p>
-          </div>
+          </motion.div>
 
           {/* Right Checklist */}
           <div className="flex-1 flex flex-col justify-center">
@@ -88,8 +104,12 @@ export default function Advantages() {
                   tr: "Doping içermez, spor için %100 yasal",
                 },
               ].map((item, index) => (
-                <li
+                <motion.li
                   key={index}
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
                   className="flex items-center text-white text-xl md:text-2xl font-sans font-medium"
                 >
                   <svg
@@ -100,7 +120,7 @@ export default function Advantages() {
                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
                   </svg>
                   <Translate en={item.en} ru={item.ru} tr={item.tr} />
-                </li>
+                </motion.li>
               ))}
             </ul>
           </div>

@@ -6,9 +6,9 @@ import Translate from "@/components/Translate";
 const CARD_ITEMS: iCardItem[] = [
   {
     id: "camel",
-    title_en: "CAMEL HUMP OIL",
-    title_ru: "ЖИР ВЕРБЛЮЖЬЕГО ГОРБА",
-    title_tr: "DEVECİ HÖRGÜCÜ YAĞI",
+    title_en: "CAMEL HUMP ESSENCE",
+    title_ru: "ЭКСТРАКТ ВЕРБЛЮЖЬЕГО ГОРБА",
+    title_tr: "DEVECİ HÖRGÜCÜ ÖZÜ",
     description_en:
       "Pure concentrated energy and natural recovery from the most resilient animals on earth.",
     description_ru:
@@ -51,9 +51,9 @@ const CARD_ITEMS: iCardItem[] = [
   },
   {
     id: "goat",
-    title_en: "GOAT FAT",
-    title_ru: "КОЗИЙ ЖИР",
-    title_tr: "KEÇİ YAĞI",
+    title_en: "GOAT BIO-COMPOUND",
+    title_ru: "КОЗИЙ БИО-КОМПОНЕНТ",
+    title_tr: "KEÇİ BİYO-BİLEŞENİ",
     description_en:
       "Ancient remedy for respiratory health and natural cellular protection.",
     description_ru:
@@ -96,15 +96,15 @@ const CARD_ITEMS: iCardItem[] = [
   },
   {
     id: "deer",
-    title_en: "DEER VISCERAL FAT",
-    title_ru: "ОЛЕНИЙ НУТРЯНОЙ ЖИР",
-    title_tr: "GEYİK İÇ YAĞI",
+    title_en: "DEER VITALITY EXTRACT",
+    title_ru: "ОЛЕНИЙ БИО-ЭКСТРАКТ",
+    title_tr: "GEYİK VİTAL ÖZÜ",
     description_en:
-      "Elite support for the cardiovascular system and extreme endurance.",
+      "Health-focused support for the cardiovascular system and extreme endurance.",
     description_ru:
-      "Элитная поддержка сердечно-сосудистой системы и экстремальная выносливость.",
+      "Оздоровительная поддержка сердечно-сосудистой системы и выносливость.",
     description_tr:
-      "Kardiyovasküler sistem için elit destek ve aşırı dayanıklılık.",
+      "Kardiyovasküler sistem için sağlık desteği ve yüksek dayanıklılık.",
     src: "/product/jar-product.png",
     bgSrc: "/product/deer-bg.png",
     color: "#cda558",
@@ -141,9 +141,9 @@ const CARD_ITEMS: iCardItem[] = [
   },
   {
     id: "fatty",
-    title_en: "FATTY FAT (OMEGA 9)",
-    title_ru: "ОВЕЧИЙ КУРДЮЧНЫЙ ЖИР",
-    title_tr: "KOYUN KUYRUK YAĞI",
+    title_en: "PURE OMEGA 9 COMPLEX",
+    title_ru: "КУРДЮЧНЫЙ БИО-КОМПЛЕКС",
+    title_tr: "KUYRUK BİYO-KOMPLEKSİ",
     description_en:
       "The missing link for skin youthfulness and biological balance.",
     description_ru:
@@ -189,11 +189,11 @@ const CARD_ITEMS: iCardItem[] = [
     title_ru: "БИО-МАЗЬ ОБЕЗБОЛИВАЮЩАЯ",
     title_tr: "ORGANİK MERHEM",
     description_en:
-      "Elite natural formulation for external recovery, muscle soothing, and joint support.",
+      "Bio-active natural formulation for external recovery, muscle soothing, and joint support.",
     description_ru:
-      "Элитная природная формула для наружного восстановления, снятия мышечного напряжения и поддержки суставов.",
+      "Биоактивная природная формула для наружного восстановления, снятия мышечного напряжения и поддержки суставов.",
     description_tr:
-      "Dış iyileşme, kas yatıştırma ve eklem desteği için elit doğal formülasyon.",
+      "Dış iyileşme, kas yatıştırma ve eklem desteği için bio-aktif doğal formülasyon.",
     src: "/product/jar-product.png",
     bgSrc: "/product/ointment-bg.png",
     color: "#cda558",
@@ -204,7 +204,7 @@ const CARD_ITEMS: iCardItem[] = [
       "Natural anti-inflammatory",
       "Rapid absorption",
       "Halal certified",
-      "Elite protection",
+      "Health protection",
       "Pure organic",
     ],
     benefits_ru: [
@@ -214,7 +214,7 @@ const CARD_ITEMS: iCardItem[] = [
       "Природное противовоспалительное",
       "Быстрое впитывание",
       "Сертификат Халяль",
-      "Элитная защита",
+      "Защита здоровья",
       "Чистая органика",
     ],
     benefits_tr: [
@@ -224,7 +224,7 @@ const CARD_ITEMS: iCardItem[] = [
       "Doğal anti-enflamatuar",
       "Hızlı emilim",
       "Helal sertifikalı",
-      "Elit koruma",
+      "Sağlık koruması",
       "Saf organik",
     ],
   },

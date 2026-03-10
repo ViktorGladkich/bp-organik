@@ -75,6 +75,7 @@ export default function Contact() {
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             className="text-[#cda558] text-xs font-bold uppercase tracking-[0.5em] mb-6 block"
           >
             <Translate
@@ -86,13 +87,14 @@ export default function Contact() {
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="text-6xl md:text-[8vw] font-black text-white tracking-tighter leading-none italic uppercase"
           >
             <Translate
-              en="REACH ELITE POTENTIAL"
-              ru="ДОСТИГНИ ЭЛИТНОГО УРОВНЯ"
-              tr="ELİT POTANSİYELE ULAŞIN"
+              en="VITAL POTENTIAL"
+              ru="ПИКОВЫЙ УРОВЕНЬ"
+              tr="ZİRVE POTANSİYELE ULAŞIN"
             />
           </motion.h2>
         </div>
@@ -136,6 +138,7 @@ export default function Contact() {
             <motion.div
               initial={{ opacity: 0, scale: 0.98 }}
               whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
               className="relative p-1 bg-linear-to-br from-white/10 to-transparent rounded-[2.5rem] md:rounded-[4rem]"
             >
               <div className="bg-[#0a0a0a]/80 backdrop-blur-3xl p-8 md:p-16 rounded-[2.4rem] md:rounded-[3.9rem]">
