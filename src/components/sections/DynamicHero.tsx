@@ -178,7 +178,7 @@ export default function DynamicHero() {
             scale: jarScale,
             willChange: "transform",
           }}
-          className="relative top-[5vh] md:top-0 md:left-[8%] w-[65vw] md:w-[20vw] max-w-[350px] aspect-square pointer-events-none z-20"
+          className="relative top-[2vh] md:top-0 md:left-[8%] w-[55vw] md:w-[20vw] max-w-[350px] aspect-square pointer-events-none z-20"
         >
           <Image
             src="/jar.png"
