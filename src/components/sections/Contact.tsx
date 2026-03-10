@@ -110,7 +110,7 @@ export default function Contact() {
                 Antalya, Turkey <br />
                 <Translate
                   en="AZARS • Turkish-Russian Trading House"
-                  ru="AZARS • Турецко-Российский Торговый Дом"
+                  ru="АЗАРС • Турецко-Российский Торговый Дом"
                   tr="AZARS • Türk-Rus Ticaret Evi"
                 />
               </p>

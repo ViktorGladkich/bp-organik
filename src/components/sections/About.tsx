@@ -110,14 +110,14 @@ export default function About() {
                 <h3 className="text-white text-2xl md:text-3xl font-semibold mb-6 uppercase tracking-tight italic">
                   <Translate
                     en="AZARS • Trading House"
-                    ru="AZARS • Торговый Дом"
+                    ru="АЗАРС • Торговый Дом"
                     tr="AZARS • Ticaret Evi"
                   />
                 </h3>
                 <p className="text-white/60 text-base md:text-lg leading-relaxed font-medium">
                   <Translate
                     en="A dedicated commercial bridge facilitating seamless cooperation and conscious organic distribution between the Republic of Turkey and the Russian Federation."
-                    ru="Профессиональный торговый мост, обеспечивающий бесперебойное сотрудничество и дистрибуцию оздоровительных органических продуктов между Турецкой Республикой и Российской Федерацией."
+                    ru="Профессиональное торговое сотрудничество и дистрибуция оздоровительных органических продуктов между Турецкой Республикой и Российской Федерацией."
                     tr="“Türkiye Cumhuriyeti ile Rusya Federasyonu arasında sorunsuz iş birliği ve bilinçli organik dağıtım sağlayan güçlü bir ticari köprü.”"
                   />
                 </p>
@@ -192,7 +192,7 @@ export default function About() {
             {[
               {
                 title_en: "AZARS • Trading House",
-                title_ru: "AZARS • Торговый Дом",
+                title_ru: "АЗАРС • Торговый Дом",
                 title_tr: "AZARS • Ticaret Evi",
                 tag_en: "Strategic Alliance",
                 tag_ru: "Стратегический альянс",
