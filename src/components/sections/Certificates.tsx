@@ -14,9 +14,20 @@ export default function Certificates() {
   return (
     <section
       id="certificates"
-      className="w-full py-20 md:py-32 bg-[#0a0a0a] border-t border-white/5"
+      className="w-full py-20 md:py-32 bg-[#0a0a0a] border-t border-white/5 relative overflow-hidden"
     >
-      <div className="container mx-auto px-6 max-w-7xl">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/bg-certificat.png"
+          alt="Certificates Background"
+          fill
+          className="object-cover "
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-linear-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a]" />
+      </div>
+
+      <div className="container mx-auto px-6 max-w-7xl relative z-10">
         {/* Top Text - Simplified and Left Aligned like screenshot */}
         <div className="max-w-4xl mb-16">
           <p className="text-white/90 text-2xl md:text-3xl font-medium leading-[1.15] tracking-tight">

@@ -41,8 +41,8 @@ const Card: FC<iCardProps> = ({
   i,
 }) => {
   return (
-    <div className="h-screen flex items-center justify-center sticky top-0 px-4 md:px-0 bg-[#050505] overflow-hidden">
-      <div className="relative w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 h-screen py-20">
+    <div className="h-[calc(var(--vh,1vh)*100)] flex items-center justify-center sticky top-0 px-4 md:px-0 bg-[#050505] overflow-hidden">
+      <div className="relative w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 h-[calc(var(--vh,1vh)*100)] py-20">
         {/* Animal Background Background (Very large, subtle) */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-20 pointer-events-none z-0">
           <Image
@@ -122,7 +122,7 @@ interface iCardSlideProps {
 
 const CardsParallax: FC<iCardSlideProps> = ({ items }) => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-[calc(var(--vh,1vh)*100)]">
       {items.map((project, i) => {
         return <Card key={project.id} {...project} i={i} />;
       })}
