@@ -29,9 +29,9 @@ export default function Footer() {
             </div>
             <p className="text-white/50 text-xl font-medium max-w-sm leading-relaxed mb-10 italic">
               <Translate
-                en="Dedicated to the athletic pursuit of natural excellence."
-                ru="Помогаем атлетам достигать природных вершин."
-                tr="“Doğal mükemmelliğin atletik performans arayışına adanmıştır.”"
+                en="Dedicated to the pursuit of natural health and excellence for everyone."
+                ru="Помогаем каждому достигать новых вершин здоровья."
+                tr="“Herkes için doğal mükemmellik ve sağlık arayışına adanmıştır.”"
               />
             </p>
             <div className="flex gap-6">

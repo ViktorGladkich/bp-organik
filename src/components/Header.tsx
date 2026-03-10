@@ -152,9 +152,9 @@ export default function Header() {
                     </p>
                     <p className="text-white/40 text-2xl font-medium tracking-tight leading-relaxed max-w-sm">
                       <Translate
-                        en="Pure. Biological. Performance for the modern athlete."
-                        ru="Чистота. Биология. Результат для современного атлета."
-                        tr="Saf. Biyolojik. Modern sporcu için üstün performans."
+                        en="Pure. Biological. Performance for your daily life."
+                        ru="Чистота. Биология. Результат в вашей жизни."
+                        tr="Saf. Biyolojik. Herkes için üstün performans."
                       />
                     </p>
                   </div>

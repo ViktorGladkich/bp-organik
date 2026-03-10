@@ -60,9 +60,9 @@ export default function Advantages() {
           >
             <p>
               <Translate
-                en="Our natural recovery formula is built from pure organic compounds containing essential lipids and nutrients specifically adapted for peak physical performance."
-                ru="Наша природная формула восстановления создана из чистых органических соединений, содержащих полезные кислоты и нутриенты, специально подобранные для пиковых физических нагрузок."
-                tr="Doğal toparlanma formülümüz, yüksek fiziksel performansı desteklemek için özel olarak seçilmiş temel biyolojik bileşenler ve besin maddelerinden oluşur."
+                en="Our natural recovery formula is built from pure organic compounds containing essential lipids and nutrients specifically adapted for peak health and vitality."
+                ru="Наша природная формула восстановления создана из чистых органических соединений, содержащих полезные кислоты и нутриенты, специально подобраны для каждого."
+                tr="Doğal toparlanma formülümüz, herkes için yüksek sağlık ve enerji seviyelerini desteklemek için özel olarak seçilmiş temel biyolojik bileşenlerden oluşur."
               />
             </p>
             <p>
@@ -96,7 +96,7 @@ export default function Advantages() {
                 {
                   en: "Increases pain threshold & endurance",
                   ru: "Повышает болевой порог и выносливость",
-                  tr: "Dayanıklılığı ve performansı artırmaya yardımcı olur",
+                  tr: "Dayanıklılığı ve biyolojik kapasiteyi artırır",
                 },
                 {
                   en: "No doping, 100% legal for sports",

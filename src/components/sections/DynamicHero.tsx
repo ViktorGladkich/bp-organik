@@ -135,60 +135,6 @@ export default function DynamicHero() {
               tr="dinlenme deneyimini keşfedin."
             />
           </h1>
-          <div className="mt-8 flex items-center gap-3">
-            <div className="flex -space-x-4">
-              <div className="w-10 h-10 rounded-full border border-[#050505] bg-[#222] overflow-hidden relative">
-                <Image
-                  src="https://i.pravatar.cc/100?img=1"
-                  alt="Athlete"
-                  fill
-                  sizes="40px"
-                  className="object-cover"
-                />
-              </div>
-              <div className="w-10 h-10 rounded-full border border-[#050505] bg-[#333] overflow-hidden relative">
-                <Image
-                  src="https://i.pravatar.cc/100?img=2"
-                  alt="Athlete"
-                  fill
-                  sizes="40px"
-                  className="object-cover"
-                />
-              </div>
-              <div className="w-10 h-10 rounded-full border border-[#050505] bg-[#444] overflow-hidden relative">
-                <Image
-                  src="https://i.pravatar.cc/100?img=3"
-                  alt="Athlete"
-                  fill
-                  sizes="40px"
-                  className="object-cover"
-                />
-              </div>
-              <div className="w-10 h-10 rounded-full border border-[#050505] bg-[#555] overflow-hidden relative">
-                <Image
-                  src="https://i.pravatar.cc/100?img=4"
-                  alt="Athlete"
-                  fill
-                  sizes="40px"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-            <div className="text-white/80 text-sm font-medium leading-tight ml-2">
-              <div className="flex gap-[2px] mb-[2px] text-[#cda558]">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-              </div>
-              <Translate
-                en="2500+ Happy Athletes"
-                ru="2500+ Довольных Атлетов"
-                tr="2500+ Mutlu Sporcu"
-              />
-            </div>
-          </div>
         </motion.div>
 
         {/* Initial Right Text */}
@@ -232,7 +178,7 @@ export default function DynamicHero() {
             scale: jarScale,
             willChange: "transform",
           }}
-          className="relative bottom-[-15vh]  md:left-[8%] md:bottom-0 w-[65vw] md:w-[20vw] max-w-[350px] aspect-square pointer-events-none z-20"
+          className="relative top-[5vh] md:top-0 md:left-[8%] w-[65vw] md:w-[20vw] max-w-[350px] aspect-square pointer-events-none z-20"
         >
           <Image
             src="/jar.png"
@@ -259,9 +205,9 @@ export default function DynamicHero() {
           />
           <TranslatedTextReveal
             className="text-2xl md:text-5xl text-white/70 font-medium tracking-tight mt-2 md:mt-6"
-            en="Accelerate your peak performance."
-            ru="Ускорь свои лучшие достижения."
-            tr="Zirve performansınızı hızlandırın."
+            en="Accelerate your peak health and vitality."
+            ru="Ускорь свое здоровье и жизненную силу."
+            tr="Zirve sağlığınızı ve canlılığınızı hızlandırın."
             progress={scrollYProgress}
             range={[0.2, 0.28]}
           />
@@ -302,12 +248,12 @@ export default function DynamicHero() {
           <ScrollCard
             anim={card04}
             num="04"
-            title_en="VITAL PERFORMANCE"
-            title_ru="МАКСИМАЛЬНАЯ ЭФФЕКТИВНОСТЬ"
-            title_tr="VİTAL PERFORMANS"
-            desc_en="Trusted by athletes. Engineered for endurance, strength, and unrivaled natural recovery."
-            desc_ru="Выбор профессиональных атлетов. Создано для выносливости, силы и природного восстановления."
-            desc_tr="Sporcuların güvendiği formül. Dayanıklılık, güç ve doğal toparlanmayı desteklemek için özel olarak geliştirilmiştir."
+            title_en="VITAL HEALTH"
+            title_ru="МАКСИМАЛЬНОЕ ЗДОРОВЬЕ"
+            title_tr="VİTAL SAĞLIK"
+            desc_en="Trusted by health-conscious people. Engineered for endurance, strength, and unrivaled natural recovery."
+            desc_ru="Выбор тех, кто ценит здоровье. Создано для выносливости, силы и природного восстановления."
+            desc_tr="Yüksek sağlık bilinci ile geliştirilen formül. Dayanıklılık, güç ve doğal toparlanmayı destekler."
           />
         </div>
       </div>
