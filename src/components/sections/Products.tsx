@@ -17,7 +17,7 @@ const CARD_ITEMS: iCardItem[] = [
       "Dünyanın en dayanıklı hayvanlarından saf konsantre enerji ve doğal iyileşme.",
     src: "/product/jar-product.png",
     bgSrc: "/product/camel-bg.png",
-    color: "#cda558", // Exclusive Gold for titles
+    color: "#ffc837", // Exclusive Gold for titles
     benefits_en: [
       "lowers cholesterol",
       "strength when tired",
@@ -62,7 +62,7 @@ const CARD_ITEMS: iCardItem[] = [
       "Solunum sağlığı ve doğal hücresel koruma için kadim bir çare.",
     src: "/product/jar-product.png",
     bgSrc: "/product/goat-bg.png",
-    color: "#cda558",
+    color: "#ffc837",
     benefits_en: [
       "Immune system",
       "Reproductives",
@@ -107,7 +107,7 @@ const CARD_ITEMS: iCardItem[] = [
       "Kardiyovasküler sistem için sağlık desteği ve yüksek dayanıklılık.",
     src: "/product/jar-product.png",
     bgSrc: "/product/deer-bg.png",
-    color: "#cda558",
+    color: "#ffc837",
     benefits_en: [
       "Cardiovascular support",
       "Immune boost",
@@ -151,7 +151,7 @@ const CARD_ITEMS: iCardItem[] = [
     description_tr: "Cilt gençliği ve biyolojik denge için eksik halka.",
     src: "/product/jar-product.png",
     bgSrc: "/product/fatty-bg.png",
-    color: "#cda558",
+    color: "#ffc837",
     benefits_en: [
       "Youthful skin",
       "Collagen production",
@@ -196,7 +196,7 @@ const CARD_ITEMS: iCardItem[] = [
       "Dış iyileşme, kas yatıştırma ve eklem desteği için bio-aktif doğal formülasyon.",
     src: "/product/jar-product.png",
     bgSrc: "/product/ointment-bg.png",
-    color: "#cda558",
+    color: "#ffc837",
     benefits_en: [
       "Deep tissue recovery",
       "Joint support",

@@ -42,7 +42,7 @@ const Card: FC<iCardProps> = ({
 }) => {
   return (
     <div className="h-[calc(var(--vh,1vh)*100)] flex items-center justify-center sticky top-0 px-4 md:px-0 bg-[#050505] overflow-hidden">
-      <div className="relative w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 h-[calc(var(--vh,1vh)*100)] py-20">
+      <div className="relative w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6 md:gap-12 h-[calc(var(--vh,1vh)*100)] py-10 md:py-20">
         {/* Animal Background Background (Very large, subtle) */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-20 pointer-events-none z-0">
           <Image
@@ -56,7 +56,7 @@ const Card: FC<iCardProps> = ({
 
         {/* Left: Content */}
         <div className="flex-1 z-10 text-left">
-          <span className="inline-block px-4 py-1 rounded-full border border-[#cda558]/30 bg-[#cda558]/10 text-[#cda558] text-sm font-semibold tracking-widest uppercase mb-6">
+          <span className="inline-block px-3 py-0.5 md:px-4 md:py-1 rounded-full border border-[#ffc837]/30 bg-[#ffc837]/10 text-[#ffc837] text-xs md:text-sm font-semibold tracking-widest uppercase mb-4 md:mb-6">
             <Translate
               en="Featured Product"
               ru="Рекомендуемый продукт"
@@ -65,13 +65,13 @@ const Card: FC<iCardProps> = ({
           </span>
 
           <h2
-            className="text-4xl md:text-7xl font-semibold tracking-tighter mb-6 leading-none italic"
+            className="text-2xl sm:text-4xl md:text-7xl font-semibold tracking-tighter mb-4 md:mb-6 leading-none italic"
             style={{ color: color }}
           >
             <Translate en={title_en} ru={title_ru} tr={title_tr} />
           </h2>
 
-          <div className="text-white/60 text-lg md:text-xl font-medium mb-10 max-w-xl leading-relaxed">
+          <div className="text-white/60 text-sm sm:text-lg md:text-xl font-medium mb-6 md:mb-10 max-w-xl leading-relaxed">
             <Translate
               en={description_en}
               ru={description_ru}
@@ -83,8 +83,8 @@ const Card: FC<iCardProps> = ({
           <div className="grid grid-cols-2 gap-x-4 gap-y-2 max-w-2xl">
             {benefits_en.map((_, idx) => (
               <div key={idx} className="flex items-center gap-2">
-                <div className="w-3 h-3 md:w-5 md:h-5 rounded-full flex items-center justify-center border border-[#cda558]/50 shrink-0">
-                  <div className="w-1 h-1 md:w-2 md:h-2 rounded-full bg-[#cda558]" />
+                <div className="w-3 h-3 md:w-5 md:h-5 rounded-full flex items-center justify-center border border-[#ffc837]/50 shrink-0">
+                  <div className="w-1 h-1 md:w-2 md:h-2 rounded-full bg-[#ffc837]" />
                 </div>
                 <span className="text-white/80 text-[10px] md:text-base font-medium line-clamp-2">
                   <Translate

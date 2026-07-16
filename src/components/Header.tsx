@@ -126,7 +126,7 @@ export default function Header() {
                       <Link
                         href={item.href}
                         onClick={() => setIsOpen(false)}
-                        className="block text-4xl md:text-6xl font-semibold text-white/90 hover:text-[#cda558] transition-all tracking-tighter uppercase italic leading-tight"
+                        className="block text-4xl md:text-6xl font-semibold text-white/90 hover:text-[#ffc837] transition-all tracking-tighter uppercase italic leading-tight"
                       >
                         <span className="inline-block transition-transform lg:group-hover:translate-x-4">
                           <Translate
@@ -147,7 +147,7 @@ export default function Header() {
                   className="hidden lg:block border-l border-white/10 pl-20"
                 >
                   <div className="mb-12">
-                    <p className="text-[#cda558] text-[10px] font-bold uppercase tracking-[0.4em] mb-4">
+                    <p className="text-[#ffc837] text-[10px] font-bold uppercase tracking-[0.4em] mb-4">
                       Our Mission
                     </p>
                     <p className="text-white/40 text-2xl font-medium tracking-tight leading-relaxed max-w-sm">
@@ -159,7 +159,7 @@ export default function Header() {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-[#cda558] text-[10px] font-bold uppercase tracking-[0.4em] mb-4">
+                    <p className="text-[#ffc837] text-[10px] font-bold uppercase tracking-[0.4em] mb-4">
                       Follow Us
                     </p>
                     <div className="flex gap-8">

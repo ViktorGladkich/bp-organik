@@ -9,7 +9,7 @@ export default function LegalNotice() {
     <main className="min-h-screen bg-[#050505] text-white pt-32">
       <Header />
       <div className="container mx-auto px-6 max-w-4xl py-20 pb-40">
-        <h1 className="text-4xl md:text-6xl font-black mb-12 italic uppercase tracking-tighter text-[#cda558]">
+        <h1 className="text-4xl md:text-6xl font-black mb-12 italic uppercase tracking-tighter text-[#ffc837]">
           <Translate
             en="Legal Notice"
             ru="Юридическая информация"
@@ -20,14 +20,14 @@ export default function LegalNotice() {
         <div className="prose prose-invert prose-gold max-w-none space-y-12 text-white/70 text-lg leading-relaxed">
           {/* Company Identity */}
           <section className="bg-white/5 p-8 rounded-3xl border border-white/10">
-            <h2 className="text-[#cda558] text-2xl font-bold mb-6 uppercase tracking-tight italic">
+            <h2 className="text-[#ffc837] text-2xl font-bold mb-6 uppercase tracking-tight italic">
               <Translate en="AZARS" ru="АЗАРС" tr="AZARS" /> •{" "}
               <Translate
                 en="Trading House"
                 ru="Торговый Дом"
                 tr="Ticaret Evi"
               />
-              <span className="text-[#cda558]">.</span>
+              <span className="text-[#ffc837]">.</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-4">

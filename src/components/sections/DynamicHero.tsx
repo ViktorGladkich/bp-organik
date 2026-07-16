@@ -119,8 +119,8 @@ export default function DynamicHero() {
           <h1
             className={`text-white tracking-tight font-medium leading-[1.1] ${
               language === "ru"
-                ? "text-4xl md:text-5xl lg:text-[70px]"
-                : "text-4xl md:text-6xl lg:text-[80px]"
+                ? "text-3xl sm:text-4xl md:text-5xl lg:text-[70px]"
+                : "text-3xl sm:text-4xl md:text-6xl lg:text-[80px]"
             }`}
           >
             <Translate
@@ -196,7 +196,7 @@ export default function DynamicHero() {
           className="absolute top-[35%] md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full px-4 z-10 flex flex-col items-center gap-2"
         >
           <TranslatedTextReveal
-            className="text-5xl md:text-[80px] lg:text-[100px] text-white tracking-tight font-medium leading-none drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+            className="text-3xl sm:text-5xl md:text-[80px] lg:text-[100px] text-white tracking-tight font-medium leading-none drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]"
             en="Reveal your inner strength."
             ru="Открой свою внутреннюю силу."
             tr="İçsel gücünüzü ortaya çıkarın."
@@ -204,7 +204,7 @@ export default function DynamicHero() {
             range={[0.15, 0.22]}
           />
           <TranslatedTextReveal
-            className="text-2xl md:text-5xl text-white/70 font-medium tracking-tight mt-2 md:mt-6"
+            className="text-base sm:text-2xl md:text-5xl text-white/70 font-medium tracking-tight mt-2 md:mt-6"
             en="Accelerate your peak health and vitality."
             ru="Ускорь свое здоровье и жизненную силу."
             tr="Zirve sağlığınızı ve canlılığınızı hızlandırın."
@@ -291,20 +291,20 @@ function ScrollCard({
       className="absolute top-[12%] md:top-[30%] left-[5%] md:left-[10%] w-[90vw] md:w-[45vw] max-w-[600px]"
     >
       <div
-        className={`font-sans tracking-tighter font-medium text-[150px] md:text-[250px] text-white opacity-[0.03] absolute -top-16 md:-top-32 -left-4 md:-left-12 z-0 select-none leading-none pointer-events-none`}
+        className={`font-sans tracking-tighter font-medium text-[100px] sm:text-[150px] md:text-[250px] text-white opacity-[0.03] absolute -top-12 sm:-top-16 md:-top-32 -left-2 sm:-left-4 md:-left-12 z-0 select-none leading-none pointer-events-none`}
       >
         {num}
       </div>
       <div className="relative z-10 w-full">
         <h3
-          className={`font-sans font-medium text-3xl md:text-6xl text-white uppercase mb-6 tracking-tight leading-[1.1] drop-shadow-lg`}
+          className={`font-sans font-medium text-2xl sm:text-3xl md:text-6xl text-white uppercase mb-4 md:mb-6 tracking-tight leading-[1.1] drop-shadow-lg`}
         >
           <Translate en={title_en} ru={title_ru} tr={title_tr} />
         </h3>
-        <div className="w-16 h-1 flex bg-white/30 mb-6 relative overflow-hidden">
+        <div className="w-16 h-1 flex bg-white/30 mb-4 md:mb-6 relative overflow-hidden">
           <div className="absolute top-0 left-0 h-full bg-white w-full shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
         </div>
-        <p className="text-white/80 text-lg md:text-2xl font-sans tracking-wide leading-relaxed drop-shadow-md">
+        <p className="text-white/80 text-sm sm:text-lg md:text-2xl font-sans tracking-wide leading-relaxed drop-shadow-md">
           <Translate en={desc_en} ru={desc_ru} tr={desc_tr} />
         </p>
       </div>

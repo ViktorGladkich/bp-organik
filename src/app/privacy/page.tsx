@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
     <main className="min-h-screen bg-[#050505] text-white pt-32">
       <Header />
       <div className="container mx-auto px-6 max-w-4xl py-20 pb-40">
-        <h1 className="text-4xl md:text-6xl font-black mb-12 italic uppercase tracking-tighter text-[#cda558]">
+        <h1 className="text-4xl md:text-6xl font-black mb-12 italic uppercase tracking-tighter text-[#ffc837]">
           <Translate
             en="Privacy Policy"
             ru="Политика конфиденциальности"

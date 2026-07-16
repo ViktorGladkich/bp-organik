@@ -8,7 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-montserrat), sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
@@ -22,7 +22,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -31,11 +31,20 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #050505;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cda558;
+  background: transparent;
   border-radius: 10px;
+}
+
+html.is-scrolling::-webkit-scrollbar-track,
+.is-scrolling ::-webkit-scrollbar-track {
+  background: #050505;
+}
+html.is-scrolling::-webkit-scrollbar-thumb,
+.is-scrolling ::-webkit-scrollbar-thumb {
+  background: #ffc837;
 }
 /* Burger Menu Styles */
 .hamburger {
@@ -53,7 +62,7 @@ body {
 
 .line {
   fill: none;
-  stroke: #cda558;
+  stroke: #ffc837;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 3;

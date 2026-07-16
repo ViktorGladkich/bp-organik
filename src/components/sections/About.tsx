@@ -21,7 +21,7 @@ export default function About() {
     <section
       ref={containerRef}
       id="about"
-      className="w-full bg-[#050505] py-32 md:py-48 relative border-t border-white/5"
+      className="w-full bg-[#050505] py-32 md:py-48 relative"
     >
       {/* Large Decorative Background Text */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none hidden md:flex flex-col justify-center gap-12 select-none overflow-hidden z-0">
@@ -49,7 +49,7 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <span className="text-[#cda558] text-sm font-semibold tracking-[0.3em] uppercase mb-4 block">
+              <span className="text-[#ffc837] text-sm font-semibold tracking-[0.3em] uppercase mb-4 block">
                 <Translate en="Our Legacy" ru="Наше наследие" tr="Mirasımız" />
               </span>
               <h2
@@ -74,7 +74,7 @@ export default function About() {
                   />
                 </p>
                 <div className="py-4">
-                  <p className="text-[#cda558] italic font-semibold">
+                  <p className="text-[#ffc837] italic font-semibold">
                     <Translate
                       en="Trusted by professionals worldwide."
                       ru="Доверие профессионалов по всему миру."
@@ -94,7 +94,7 @@ export default function About() {
                 incrementY={40}
                 incrementYBase={100}
                 incrementZ={0}
-                className="p-8 md:p-12 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-[40px] hover:border-[#cda558]/30 transition-all group"
+                className="p-8 md:p-12 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-[40px] hover:border-[#ffc837]/30 transition-all group"
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
@@ -129,7 +129,7 @@ export default function About() {
                 incrementY={40}
                 incrementYBase={100}
                 incrementZ={0}
-                className="p-8 md:p-12 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-[40px] hover:border-[#cda558]/30 transition-colors group"
+                className="p-8 md:p-12 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-[40px] hover:border-[#ffc837]/30 transition-colors group"
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
@@ -160,7 +160,7 @@ export default function About() {
                 incrementY={40}
                 incrementYBase={100}
                 incrementZ={0}
-                className="p-8 md:p-12 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-[40px] hover:border-[#cda558]/30 transition-colors group"
+                className="p-8 md:p-12 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl md:rounded-[40px] hover:border-[#ffc837]/30 transition-colors group"
               >
                 <div className="flex items-center gap-4 mb-6">
                   <div className="px-3 py-1 bg-white/5 rounded-full border border-white/10">

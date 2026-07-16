@@ -15,6 +15,18 @@ export default function SmoothScroll() {
       touchMultiplier: 2,
     });
 
+    let scrollTimeout: NodeJS.Timeout;
+
+    const handleScroll = () => {
+      document.documentElement.classList.add("is-scrolling");
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        document.documentElement.classList.remove("is-scrolling");
+      }, 1000);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -24,6 +36,9 @@ export default function SmoothScroll() {
 
     return () => {
       lenis.destroy();
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(scrollTimeout);
+      document.documentElement.classList.remove("is-scrolling");
     };
   }, []);
 

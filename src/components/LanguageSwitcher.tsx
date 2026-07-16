@@ -42,11 +42,11 @@ export default function LanguageSwitcher() {
         <span className="text-sm md:text-xl leading-none">
           {activeLang.flag}
         </span>
-        <span className="text-[#cda558] font-bold text-xs md:text-sm tracking-wide">
+        <span className="text-[#ffc837] font-bold text-xs md:text-sm tracking-wide">
           {activeLang.label}
         </span>
         <svg
-          className={`w-3 h-3 text-[#cda558] transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+          className={`w-3 h-3 text-[#ffc837] transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -81,7 +81,7 @@ export default function LanguageSwitcher() {
                 }`}
               >
                 <span className="text-lg leading-none">{lang.flag}</span>
-                <span className="text-[#cda558] font-bold text-sm">
+                <span className="text-[#ffc837] font-bold text-sm">
                   {lang.name}
                 </span>
               </button>

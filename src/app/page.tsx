@@ -14,9 +14,9 @@ export default function Home() {
     <main className="min-h-screen bg-[#050505] font-sans text-white">
       <Header />
       <DynamicHero />
+      <About />
       <HowItWorks />
       <Products />
-      <About />
       <Advantages />
       <Certificates />
       <Halal />

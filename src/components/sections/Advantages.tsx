@@ -13,7 +13,7 @@ export default function Advantages() {
       <div className="absolute top-[10%] left-[-15%] md:left-[-5%] w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-[#111] rounded-full opacity-50 flex items-center justify-center shadow-inner">
         <svg
           viewBox="0 0 24 24"
-          className="w-1/2 h-1/2 text-[#cda558] fill-current drop-shadow-xl transform -rotate-12 opacity-10"
+          className="w-1/2 h-1/2 text-[#ffc837] fill-current drop-shadow-xl transform -rotate-12 opacity-10"
         >
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
         </svg>
@@ -22,7 +22,7 @@ export default function Advantages() {
       <div className="absolute top-[40%] right-[-15%] md:right-[-5%] w-[300px] h-[300px] md:w-[450px] md:h-[450px] bg-[#111] rounded-full opacity-50 flex items-center justify-center mb-10 shadow-inner">
         <svg
           viewBox="0 0 24 24"
-          className="w-1/2 h-1/2 text-[#cda558] fill-current drop-shadow-xl transform rotate-12 opacity-10"
+          className="w-1/2 h-1/2 text-[#ffc837] fill-current drop-shadow-xl transform rotate-12 opacity-10"
         >
           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
         </svg>
@@ -34,7 +34,7 @@ export default function Advantages() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className={`font-sans font-medium text-4xl md:text-6xl xl:text-[70px] tracking-tight text-[#cda558] uppercase mb-2 leading-[1.05] drop-shadow-sm`}
+            className="font-sans font-medium text-3xl sm:text-4xl md:text-6xl xl:text-[70px] tracking-tight text-[#ffc837] uppercase mb-2 leading-[1.05] drop-shadow-sm"
           >
             <Translate en="ADVANTAGES" ru="ПРЕИМУЩЕСТВА" tr="KOMPLEKSİN" />
           </motion.h2>
@@ -113,7 +113,7 @@ export default function Advantages() {
                   className="flex items-center text-white text-xl md:text-2xl font-sans font-medium"
                 >
                   <svg
-                    className="w-8 h-8 md:w-10 md:h-10 mr-6 text-[#cda558] shrink-0 drop-shadow-[0_0_10px_rgba(205,165,88,0.3)]"
+                    className="w-8 h-8 md:w-10 md:h-10 mr-6 text-[#ffc837] shrink-0 drop-shadow-[0_0_10px_rgba(255,200,55,0.3)]"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >

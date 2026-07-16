@@ -15,18 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-32">
           {/* Brand Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-8">
-              <Image
-                src="/logo.png"
-                alt="BP Logo"
-                width={50}
-                height={50}
-                className="object-contain"
-              />
-              <h2 className="text-white text-4xl font-semibold tracking-tighter italic">
-                ORGANIK<span className="text-[#cda558]">.</span>
-              </h2>
-            </div>
+            
             <p className="text-white/50 text-xl font-medium max-w-sm leading-relaxed mb-10 italic">
               <Translate
                 en="Dedicated to the pursuit of natural health and excellence for everyone."
@@ -34,7 +23,7 @@ export default function Footer() {
                 tr="“Herkes için doğal mükemmellik ve sağlık arayışına adanmıştır.”"
               />
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap gap-x-4 gap-y-2 sm:gap-6">
               <SocialLink
                 href="https://www.instagram.com/bporganika/"
                 label="Instagram"
@@ -46,7 +35,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-[#cda558] text-xs font-bold uppercase tracking-[0.3em] mb-10">
+            <h4 className="text-[#ffc837] text-xs font-bold uppercase tracking-[0.3em] mb-10">
               <Translate en="Navigation" ru="Навигация" tr="Navigasyon" />
             </h4>
             <ul className="space-y-4">
@@ -71,7 +60,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-[#cda558] text-xs font-bold uppercase tracking-[0.3em] mb-10">
+            <h4 className="text-[#ffc837] text-xs font-bold uppercase tracking-[0.3em] mb-10">
               <Translate
                 en="Direct Connect"
                 ru="Прямая связь"
@@ -85,7 +74,7 @@ export default function Footer() {
                 </p>
                 <a
                   href="mailto:bp.organika@gmail.com"
-                  className="text-white/80 hover:text-[#cda558] transition-colors font-semibold tracking-tight"
+                  className="text-white/80 hover:text-[#ffc837] transition-colors font-semibold tracking-tight"
                 >
                   bp.organika@gmail.com
                 </a>
@@ -145,14 +134,14 @@ export default function Footer() {
             </Link>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#cda558] shadow-[0_0_10px_#cda558]" />
+            <div className="w-1.5 h-1.5 rounded-full bg-[#ffc837] shadow-[0_0_10px_#ffc837]" />
             <p className="text-white/50 text-[10px] font-bold uppercase tracking-widest">
               <Translate en="Website by" ru="Сайт разработан" tr="Web sitesi" />{" "}
               <a
                 href="https://invertadigital.de"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-[#cda558] transition-colors"
+                className="text-white hover:text-[#ffc837] transition-colors"
               >
                 INVERTA DIGITAL
               </a>
@@ -168,7 +157,7 @@ function SocialLink({ href, label }: { href: string; label: string }) {
   return (
     <Link
       href={href}
-      className="text-white/30 hover:text-[#cda558] text-xs font-bold uppercase tracking-[0.2em] transition-all hover:translate-y-[-2px] block"
+      className="text-white/30 hover:text-[#ffc837] text-xs font-bold uppercase tracking-[0.2em] transition-all hover:translate-y-[-2px] block"
     >
       {label}
     </Link>
@@ -188,7 +177,7 @@ function FooterLink({
         href={href}
         className="text-white/60 hover:text-white transition-colors text-lg font-medium tracking-tight group flex items-center gap-3"
       >
-        <div className="w-0 h-[2px] bg-[#cda558] group-hover:w-4 transition-all duration-300" />
+        <div className="w-0 h-[2px] bg-[#ffc837] group-hover:w-4 transition-all duration-300" />
         {children}
       </Link>
     </li>

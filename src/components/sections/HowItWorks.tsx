@@ -59,7 +59,7 @@ export default function HowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="w-full bg-[#050505] py-24 md:py-48 px-6 border-b border-white/5 relative bg-[radial-gradient(circle_at_20%_-10%,#cda5580a,transparent_40%)]"
+      className="w-full bg-[#050505] py-24 md:py-48 px-6 border-b border-white/5 relative bg-[radial-gradient(circle_at_20%_-10%,#ffc8370a,transparent_40%)]"
     >
       <div className="max-w-7xl mx-auto">
         {/* Cinematic Header Layout */}
@@ -79,7 +79,7 @@ export default function HowItWorks() {
                     tr="HASAT BURADA"
                   />
                 </span>
-                <span className="block text-[#cda558] italic font-light md:pl-32 mt-2">
+                <span className="block text-[#ffc837] italic font-light md:pl-32 mt-2">
                   <Translate
                     en="starts here."
                     ru="начинается здесь."
@@ -98,7 +98,7 @@ export default function HowItWorks() {
               transition={{ delay: 0.4 }}
               className="flex flex-col gap-8 items-center md:items-start"
             >
-              <div className="w-12 h-px bg-[#cda558]/30" />
+              <div className="w-12 h-px bg-[#ffc837]/30" />
               <p className="text-white/30 text-base md:text-lg leading-relaxed font-light uppercase tracking-wide max-w-sm">
                 <Translate
                   en="The methodology behind the bio-transformation process."
@@ -170,7 +170,7 @@ function StepCard({
       className={`relative group bg-[#0a0a0a] rounded-4xl md:rounded-[3rem] overflow-hidden border border-white/5 flex flex-col ${aspect}`}
     >
       {showGlow && (
-        <div className="absolute top-0 right-0 w-[200px] h-[200px] bg-[#cda558]/10 blur-[100px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[200px] h-[200px] bg-[#ffc837]/10 blur-[100px] pointer-events-none" />
       )}
 
       <div className="absolute inset-0 z-0">
@@ -186,10 +186,10 @@ function StepCard({
 
       <div className="relative z-10 p-8 md:p-12 flex flex-col h-full">
         <div className="flex items-center justify-between mb-auto">
-          <span className="text-[10px] font-bold text-white/40 group-hover:text-[#cda558] transition-colors duration-500 tracking-[0.5em] uppercase">
+          <span className="text-[10px] font-bold text-white/40 group-hover:text-[#ffc837] transition-colors duration-500 tracking-[0.5em] uppercase">
             Step // {step.id}
           </span>
-          <div className="w-1.5 h-1.5 rounded-full bg-[#cda558]/40 group-hover:bg-[#cda558] transition-all duration-500" />
+          <div className="w-1.5 h-1.5 rounded-full bg-[#ffc837]/40 group-hover:bg-[#ffc837] transition-all duration-500" />
         </div>
 
         <div className="mt-auto">
@@ -207,8 +207,8 @@ function StepCard({
       </div>
 
       {/* Precision corner details */}
-      <div className="absolute top-4 left-4 w-2 h-2 border-t border-l border-white/10 group-hover:border-[#cda558]/40 transition-colors" />
-      <div className="absolute bottom-4 right-4 w-2 h-2 border-b border-r border-white/10 group-hover:border-[#cda558]/40 transition-colors" />
+      <div className="absolute top-4 left-4 w-2 h-2 border-t border-l border-white/10 group-hover:border-[#ffc837]/40 transition-colors" />
+      <div className="absolute bottom-4 right-4 w-2 h-2 border-b border-r border-white/10 group-hover:border-[#ffc837]/40 transition-colors" />
     </motion.div>
   );
 }
